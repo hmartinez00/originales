@@ -1,1 +1,1 @@
- Regálame un código contenido de un archivo y volcarlo en otro archivo
+Cuales son los inputs que debería introducir el archivo `credentials.json` el cual debe contener las credenciales de la cuenta de servicio de Google Cloud que se utiliza para acceder a la API de Google Sheets?

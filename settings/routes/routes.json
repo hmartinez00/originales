@@ -9,7 +9,8 @@
             "Enviar prompt por voz",
             "Consultar a Gemini-Pro",
             "Guardar consulta",
-            "Extraer datos web"
+            "Extraer datos Pinterest",
+            "Extraer datos Tiktok"
         ],
         [
             "scripts/git_update.py",
@@ -20,7 +21,8 @@
             "scripts/voice.py",
             "scripts/app.py",
             "scripts/save_quest.py",
-            "scripts/inspection.py"
+            "scripts/inspection.py",
+            "scripts/inspection_tiktok.py"
         ]
     ]
 }

@@ -1,24 +1,15 @@
-El archivo `credentials.json` debe contener las credenciales de la cuenta de servicio de Google Cloud que se utiliza para acceder a la API de Google Sheets. Debe tener el siguiente formato:
-
-```json
-{
-  "type": "service_account",
-  "project_id": "PROJECT_ID",
-  "private_key_id": "PRIVATE_KEY_ID",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nYOUR_PRIVATE_KEY\n-----END PRIVATE KEY-----\n",
-  "client_email": "CLIENT_EMAIL",
-  "client_id": "CLIENT_ID",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/PROJECT_ID%40PROJECT_NUMBER.iam.gserviceaccount.com"
+data = {
+    'https://vm.tiktok.com/ZMMXaYT2C/': 'recetas de trufas de chocolate',
+    'https://vm.tiktok.com/ZMMXa4nVG/': 'tecnica de temperado del chocolate',
+    'https://vm.tiktok.com/ZMMXa3Kto/': 'ciencia del chocolate brillante',
+    'https://vm.tiktok.com/ZMMXav1pJ/': 'bombon de chocolate casero',
+    'https://vm.tiktok.com/ZMMXmL5rW/': 'arte de la escultura de chocolate',
+    'https://vm.tiktok.com/ZMMXmj54G/': 'beneficios del cacao para la salud',
+    'https://vm.tiktok.com/ZMMXmVQ8j/': 'recetas saludables con chocolate',
+    'https://vm.tiktok.com/ZMMXmCRmG/': 'alternativas al azucar en las',
+    'https://vm.tiktok.com/ZMMXmuSnD/': 'recetas de chocolate',
+    'https://vm.tiktok.com/ZMMXmCe26/': 'chocolate personalizado para eventos',
+    'https://vm.tiktok.com/ZMMXms1w5/': 'regalos de chocolate para San Valentin',
+    'https://vm.tiktok.com/ZMMXuMuK6/': 'chocolate tematico para fiestas',
+    'https://vm.tiktok.com/ZMMXmw4ha/': 'cursos de fabricacion de chocolate en linea',
 }
-```
-
-Debes reemplazar los siguientes valores de marcador de posición con la información correspondiente de tu cuenta de servicio:
-
-* **PROJECT_ID**: El ID del proyecto de Google Cloud asociado con tu cuenta de servicio.
-* **PRIVATE_KEY_ID**: El ID de la clave privada asociada con tu cuenta de servicio.
-* **PRIVATE_KEY**: La clave privada en formato PEM.
-* **CLIENT_EMAIL**: La dirección de correo electrónico de la cuenta de servicio.
-* **CLIENT_ID**: El ID de cliente de la cuenta de servicio.

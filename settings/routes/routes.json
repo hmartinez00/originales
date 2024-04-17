@@ -1,0 +1,22 @@
+{
+    "exec": [
+        [
+            "Hacer commit automatico",
+            "Extraer Videos",
+            "Extraer Audios",
+            "Traducir Subtitulos",
+            "Ajustar Subtitulos",
+            "Enviar prompt por voz",
+            "Extraer datos web"
+        ],
+        [
+            "scripts/git_update.py",
+            "scripts/video_extractor.py",
+            "scripts/audio_extract.py",
+            "scripts/translate.py",
+            "scripts/modify_translate.py",
+            "scripts/voice.py",
+            "scripts/inspection.py"
+        ]
+    ]
+}

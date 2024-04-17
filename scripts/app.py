@@ -24,7 +24,7 @@ def rebajar(text):
   return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
 
 # Abrir el archivo en modo lectura
-with open('quest.md', 'r', encoding='utf-8') as archivo:
+with open(r'consultas_gemini\quest.md', 'r', encoding='utf-8') as archivo:
     # Leer el contenido del archivo
     quest = archivo.read()
 
@@ -34,7 +34,7 @@ with open('quest.md', 'r', encoding='utf-8') as archivo:
 respuesta = modelo.generate_content(quest)
 respuesta = respuesta.text
 
-with open('ask.md', 'w', encoding='utf-8') as f:
+with open(r'consultas_gemini\ask.md', 'w', encoding='utf-8') as f:
     f.writelines(respuesta)
 
 # Imprimimos la respuesta 

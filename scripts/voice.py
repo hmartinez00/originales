@@ -14,8 +14,7 @@ secuence_optionsB = datos_json['voice_optiones']['secuence'][1]
 clear_options = datos_json['voice_optiones']['clear']
 
 
-
-file = 'quest.md'
+file = r'consultas_gemini\quest.md'
 
 if os.path.isfile(file):
     pass

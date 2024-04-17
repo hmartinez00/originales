@@ -1,0 +1,1 @@
+ Regálame un código contenido de un archivo y volcarlo en otro archivo

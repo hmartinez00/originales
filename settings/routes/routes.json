@@ -2,7 +2,8 @@
     "exec": [
         [
             "Hacer commit automatico",
-            "Extraer Videos",
+            "Extraer Videos Pinterest",
+            "Extraer Videos Tiktok",
             "Extraer Audios",
             "Traducir Subtitulos",
             "Ajustar Subtitulos",
@@ -14,7 +15,8 @@
         ],
         [
             "scripts/git_update.py",
-            "scripts/video_extractor.py",
+            "scripts/video_extractor_pin.py",
+            "scripts/video_extractor_tiktok.py",
             "scripts/audio_extract.py",
             "scripts/translate.py",
             "scripts/modify_translate.py",

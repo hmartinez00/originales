@@ -3,7 +3,7 @@ import json
 from Eliezer.speech_recognizer import Reconocimiento
 from Eliezer.speech_recognizer import orders
 
-ruta_archivo_json = 'voice_comand_settings.json'
+ruta_archivo_json = 'settings/voice/voice_comand_settings.json'
 
 with open(ruta_archivo_json) as archivo_json:
     datos_json = json.load(archivo_json)

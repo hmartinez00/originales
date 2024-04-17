@@ -11,7 +11,7 @@ sys.stdout.reconfigure(encoding='utf-8')
 modelo = genai.GenerativeModel('gemini-pro')
 
 # Abrir el archivo JSON
-with open('settings.json', 'r') as f:
+with open(r'settings\api\settings.json', 'r') as f:
     data = json.load(f)
 
 # Configuramos la API KEY 

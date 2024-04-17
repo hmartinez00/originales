@@ -1,43 +1,41 @@
-1
-00:00:00,000 --> 00:00:06,500
-Crema batida hecha en un vaso para cuando llegan visitas inesperadas a tu casa
+**Recomendaciones para elaborar un prompt para generar un plan de contenidos para redes sociales:**
 
-2
-00:00:06,500 --> 00:00:12,000
-Aprovecha y dime en los comentarios si te gusta que lleguen visitas inesperadas a tu casa
+**1. Define tus objetivos:**
+* ¿Qué quieres conseguir con tu contenido en las redes sociales?
+* ¿Aumentar el conocimiento de la marca, generar clientes potenciales, impulsar las ventas?
 
-3
-00:00:12,000 --> 00:00:23,000
-En una licuadora, agrega crema de leche, crema de batir, leche condensada y un sobre de jugo en polvo
+**2. Conoce a tu audiencia:**
+* ¿Quiénes son tus seguidores objetivo?
+* ¿Cuáles son sus intereses, valores y comportamientos?
 
-4
-00:00:23,000 --> 00:00:29,000
-Bate todo muy bien; los ingredientes completos estarán en la descripción de este vídeo
+**3. Identifica los temas principales:**
+* ¿Sobre qué temas quieres crear contenido?
+* ¿Qué es relevante para tu audiencia y se alinea con tus objetivos?
 
-5
-00:00:29,000 --> 00:00:35,000
-Cuando se incorpore, agrega granizado, mezcla todo muy bien y agrega un poco más
+**4. Establece un tono y estilo:**
+* ¿Cómo quieres que se perciba tu marca en las redes sociales?
+* ¿Profesional, divertido, informativo, inspirador?
 
-6
-00:00:35,000 --> 00:00:39,000
-Y ahí puedes mezclar con una espátula
+**5. Define la frecuencia y el formato del contenido:**
+* ¿Con qué frecuencia publicarás contenido?
+* ¿Qué formatos utilizarás (por ejemplo, publicaciones, historias, carruseles, vídeos en directo)?
 
-7
-00:00:39,000 --> 00:00:43,000
-Ahora solo tienes que pasar a los vasos de tu preferencia
+**6. Considera las tendencias del sector:**
+* ¿Qué contenido está funcionando bien en tu sector?
+* ¿Hay tendencias emergentes que deberías aprovechar?
 
-8
-00:00:43,000 --> 00:00:49,000
-Lleva al congelador por cinco minutos y ya puedes servir; ¿está bien?
+**7. Alinea con tu calendario de marketing:**
+* ¿Tienes eventos o campañas promocionales próximos que deban reflejarse en tu calendario de contenidos?
 
-9
-00:00:49,000 --> 00:00:55,000
-Dime también qué calificación le das a esta receta de hoy y de qué ciudad me ves
+**8. Utiliza palabras clave relevantes:**
+* Incluye palabras clave relevantes para ayudarte a llegar a tu público objetivo a través de la búsqueda.
 
-10
-00:00:55,000 --> 00:00:57,000
-Un beso y un abrazo, y que Dios te bendiga
+**9. Mantén la coherencia:**
+* Asegúrate de que tu contenido sea coherente con el tono, el estilo y la identidad de tu marca.
 
-11
-00:00:57,000 --> 00:00:59,000
-Adiós
+**10. Revisa y ajusta:**
+* Supervisa el rendimiento de tu contenido y realiza ajustes según sea necesario.
+
+**Ejemplo de prompt:**
+
+Genera un plan de contenidos para Instagram para una nueva empresa tecnológica que se dirige a profesionales del marketing. El objetivo principal es generar clientes potenciales. El tono debe ser profesional e informativo, centrado en temas relacionados con el marketing digital y las tendencias emergentes. El contenido debe publicarse dos veces por semana, en formato de publicaciones de imágenes y carruseles.

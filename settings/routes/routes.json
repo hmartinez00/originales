@@ -7,6 +7,7 @@
             "Traducir Subtitulos",
             "Ajustar Subtitulos",
             "Enviar prompt por voz",
+            "Consultar a Gemini-Pro",
             "Extraer datos web"
         ],
         [
@@ -16,6 +17,7 @@
             "scripts/translate.py",
             "scripts/modify_translate.py",
             "scripts/voice.py",
+            "scripts/app.py",
             "scripts/inspection.py"
         ]
     ]

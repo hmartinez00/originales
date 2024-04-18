@@ -8,19 +8,19 @@ from sync_voice_over.module_extractor import extract_values_tag, download_video,
 url = "https://savetik.co/en"
 
 data = {
-    # 'https://vm.tiktok.com/ZMMXaYT2C/': 'recetas de trufas de chocolate',
+    'https://vm.tiktok.com/ZMMXaYT2C/': 'recetas de trufas de chocolate',
     # 'https://vm.tiktok.com/ZMMXa4nVG/': 'tecnica de temperado del chocolate',
     # 'https://vm.tiktok.com/ZMMXa3Kto/': 'ciencia del chocolate brillante',
-    'https://vm.tiktok.com/ZMMXav1pJ/': 'bombon de chocolate casero',
-    'https://vm.tiktok.com/ZMMXmL5rW/': 'arte de la escultura de chocolate',
-    'https://vm.tiktok.com/ZMMXmj54G/': 'beneficios del cacao para la salud',
-    'https://vm.tiktok.com/ZMMXmVQ8j/': 'recetas saludables con chocolate',
-    'https://vm.tiktok.com/ZMMXmCRmG/': 'alternativas al azucar en las',
-    'https://vm.tiktok.com/ZMMXmuSnD/': 'recetas de chocolate',
-    'https://vm.tiktok.com/ZMMXmCe26/': 'chocolate personalizado para eventos',
-    'https://vm.tiktok.com/ZMMXms1w5/': 'regalos de chocolate para San Valentin',
-    'https://vm.tiktok.com/ZMMXuMuK6/': 'chocolate tematico para fiestas',
-    'https://vm.tiktok.com/ZMMXmw4ha/': 'cursos de fabricacion de chocolate en linea',
+    # 'https://vm.tiktok.com/ZMMXav1pJ/': 'bombon de chocolate casero',
+    # 'https://vm.tiktok.com/ZMMXmL5rW/': 'arte de la escultura de chocolate',
+    # 'https://vm.tiktok.com/ZMMXmj54G/': 'beneficios del cacao para la salud',
+    # 'https://vm.tiktok.com/ZMMXmVQ8j/': 'recetas saludables con chocolate',
+    # 'https://vm.tiktok.com/ZMMXmCRmG/': 'alternativas al azucar en las',
+    # 'https://vm.tiktok.com/ZMMXmuSnD/': 'recetas de chocolate',
+    # 'https://vm.tiktok.com/ZMMXmCe26/': 'chocolate personalizado para eventos',
+    # 'https://vm.tiktok.com/ZMMXms1w5/': 'regalos de chocolate para San Valentin',
+    # 'https://vm.tiktok.com/ZMMXuMuK6/': 'chocolate tematico para fiestas',
+    # 'https://vm.tiktok.com/ZMMXmw4ha/': 'cursos de fabricacion de chocolate en linea',
 }
 
 titles  = list(data.values())

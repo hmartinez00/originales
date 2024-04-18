@@ -11,7 +11,8 @@
             "Consultar a Gemini-Pro",
             "Guardar consulta",
             "Extraer datos Pinterest",
-            "Extraer datos Tiktok"
+            "Extraer datos Tiktok",
+            "Guardar en Procesados"
         ],
         [
             "scripts/git_update.py",
@@ -24,7 +25,8 @@
             "scripts/app.py",
             "scripts/save_quest.py",
             "scripts/inspection.py",
-            "scripts/inspection_tiktok.py"
+            "scripts/inspection_tiktok.py",
+            "scripts/organizer.py"
         ]
     ]
 }

@@ -1,0 +1,1 @@
+Dame un script que abra un explorador de archivos, me permita seleccionar una carpeta y me arroje la ruta de la misma

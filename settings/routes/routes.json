@@ -12,7 +12,8 @@
             "Guardar consulta",
             "Extraer datos Pinterest",
             "Extraer datos Tiktok",
-            "Guardar en Procesados"
+            "Guardar en traducidos",
+            "crear directorio sincronizar"
         ],
         [
             "scripts/git_update.py",
@@ -26,7 +27,8 @@
             "scripts/save_quest.py",
             "scripts/inspection.py",
             "scripts/inspection_tiktok.py",
-            "scripts/organizer.py"
+            "scripts/organizer.py",
+            "scripts/synchronized_files_organizer.py"
         ]
     ]
 }

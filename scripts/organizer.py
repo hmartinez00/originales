@@ -17,7 +17,7 @@ video_dir = os.path.dirname(video_url)
 video_name = os.path.basename(video_url).split(".")[0].replace(' ', '_')
 
 # Crear una carpeta dentro del directorio del video
-procesess_dir = os.path.join(video_dir, "procesados")
+procesess_dir = os.path.join(video_dir, "traducidos")
 os.makedirs(
     os.path.join(procesess_dir, video_name),
     exist_ok=True

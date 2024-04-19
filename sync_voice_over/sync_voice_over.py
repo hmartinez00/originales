@@ -47,3 +47,37 @@ def analizar_srt(original_srt):
     # Escribir las líneas modificadas al archivo
     with open(original_srt, "w", encoding="utf-8") as f:
         f.writelines(lineas)
+
+def get_video_duration(srt_file_path):
+    """Extrae la duración del vídeo desde un archivo SRT.
+
+    Args:
+        srt_file_path (str): Ruta al archivo SRT.
+
+    Devuelve:
+        str: Duración del vídeo en formato "hh:mm:ss.sss".
+    """
+
+    # Lee el archivo SRT.
+    with open(srt_file_path, "r") as f:
+        srt_text = f.read()
+
+    # Extrae los sellos de tiempo del archivo SRT.
+    timestamps = re.findall(r"(\d+:\d+:\d+,\d+)", srt_text)
+
+    if not timestamps:
+        raise ValueError("No se encontraron sellos de tiempo en el archivo SRT.")
+
+    # Calcula la duración del vídeo.
+    duration_str = timestamps[-1].split(':')
+
+    # Extraer horas, minutos y segundos
+    horas = int(duration_str[0])
+    minutos = int(duration_str[1])
+    segundos = float(str(duration_str[2]).replace(',', '.'))
+
+    # Convertir el tiempo a segundos
+    tiempo_segundos = (horas * 3600) + (minutos * 60) + segundos
+
+
+    return round(tiempo_segundos)

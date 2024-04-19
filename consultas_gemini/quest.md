@@ -1,1 +1,0 @@
-Como concateno 20 listas para crear una mas grande de elementos individuales con python.

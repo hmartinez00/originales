@@ -76,3 +76,11 @@ def download_video_tiktok(url, link, title, directory):
         print("Error al descargar el video:", response.status_code)
     driver.implicitly_wait(10)
 
+def web_query(url):
+    driver = webdriver.Chrome()
+    driver.get(url)
+    driver.implicitly_wait(10)
+    input('Press to continue: ')
+    driver.close()
+
+

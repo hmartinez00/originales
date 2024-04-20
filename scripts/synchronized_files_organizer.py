@@ -21,8 +21,10 @@ os.makedirs(
 )
 
 # Buscamos los archivos dentro del directorio
-ext = 'traducido.srt'
-files = find_files(folder_path, ext)
+extensions = ['traducido.srt', '.mp4']
+files = []
+for ext in extensions:
+    files.extend(find_files(folder_path, ext))
 
 print(files)
 

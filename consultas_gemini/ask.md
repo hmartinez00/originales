@@ -1,28 +1,14 @@
-Puedes convertir una lista de listas en un dataframe de Pandas inyectando los nombres de las columnas desde una lista aparte utilizando el siguiente código:
-
 ```python
-import pandas as pd
+import json
 
-# Lista de listas
-lista = [['a', 'b', 'c'],
-         ['d', 'e', 'f'],
-         ['g', 'h', 'i']]
+# Carga el archivo JSON
+with open('data.json', 'r') as f:
+    data = json.load(f)
 
-# Lista de nombres de columnas
-nombres = ['columna1', 'columna2', 'columna3']
+# Agrega "New" a la última posición de la primera lista dentro de la clave "exec"
+data["exec"][0].append("New")
 
-# Convertir la lista en un dataframe
-df = pd.DataFrame(lista, columns=nombres)
-
-# Mostrar el dataframe
-print(df)
-```
-
-Esto producirá el siguiente dataframe:
-
-```
-   columna1 columna2 columna3
-0        a        b        c
-1        d        e        f
-2        g        h        i
+# Guarda el archivo JSON modificado
+with open('data.json', 'w') as f:
+    json.dump(data, f, indent=4)
 ```

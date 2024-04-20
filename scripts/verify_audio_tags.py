@@ -55,5 +55,15 @@ df = pd.DataFrame(general_output, columns=columns)
 
 # Mostrar el dataframe
 print(df)
-output_file = os.path.join(directory, 'report.xlsx')
-df.to_excel(output_file)
+
+# Exportando salida
+ask = input('Desea exportar resultados? (S/N): ')
+while True:
+    if ask.lower() == 's':
+        output_file = os.path.join(directory, 'report.xlsx')
+        df.to_excel(output_file)
+        break        
+    elif ask.lower() == 'n':
+        break        
+    else:
+        print('Opcion Invalida!')

@@ -1,82 +1,73 @@
-Traduce el siguiente archivo de subtitulos al castellano. Entrega el resultado en formato de archivo srt con las misma marcas de tiempo que ya tiene.
+Voy a publicar un video de esta receta en Facebook e instagram. Crea un copy atractivo con estructura AIDA, de 5 frases de menos de 100 caracteres  para crear el texto de la publicacion. Agrega al principio un titulo viral. Agrega al final la lista de ingredientes de esta receta y sus cantidades y 9 Hashtags en castellano. No digas nada sobre su preparacion.
 
 1
-00:00:00,000 --> 00:00:01,920
-Is dark chocolate a healthy treat?
+00:00:00,000 --> 00:00:04,140
+Hoy hablaremos sobre la temperatura del chocolate o cómo hacer aros de chocolate.
 
 2
-00:00:01,920 --> 00:00:04,000
-Happily, the answer is yes.
+00:00:04,140 --> 00:00:09,980
+En la descripción, leeremos la definición de la temperatura o las curvas de temperatura de cada chocolate.
 
 3
-00:00:04,000 --> 00:00:04,840
-Why?
+00:00:09,980 --> 00:00:14,500
+Para el chocolate negro, lo dividimos en trozos pequeños y lo derretimos al baño maría.
 
 4
-00:00:06,440 --> 00:00:08,680
-Dark chocolate is a good source of magnesium,
+00:00:14,500 --> 00:00:18,500
+Derretimos una pequeña cantidad de chocolate y la extendemos muy finamente.
 
 5
-00:00:08,680 --> 00:00:10,800
-which helps regulate muscle and nerve function
+00:00:18,500 --> 00:00:21,500
+El chocolate negro se derrite entre 50 y 55°C.
 
 6
-00:00:10,800 --> 00:00:11,920
-and blood sugar levels.
+00:00:21,500 --> 00:00:26,840
+Agregamos la cantidad de chocolate derretido y una gota de chocolate negro con esta técnica.
 
 7
-00:00:11,920 --> 00:00:14,400
-One ounce can have about the same amount of fiber
+00:00:26,840 --> 00:00:29,840
+El chocolate negro debe tener una temperatura entre 28 y 29°C.
 
 8
-00:00:14,400 --> 00:00:15,520
-as a small apple.
+00:00:29,840 --> 00:00:36,840
+Una vez que el chocolate negro tiene una temperatura entre 28 y 29°C, lo colocamos en un baño maría y lo derretimos hasta que alcance una temperatura entre 31 y 32°C.
 
 9
-00:00:16,400 --> 00:00:18,780
-Much of the fat in dark chocolate is a combo
+00:00:36,840 --> 00:00:38,840
+Vertemos el chocolate sobre un papel transparente y lo extendemos finamente.
 
 10
-00:00:18,780 --> 00:00:22,040
-of heart-healthy monosaturated fat and stearic acid,
+00:00:38,840 --> 00:00:46,840
+Dejamos que el chocolate cristalice por ambos lados.
 
 11
-00:00:22,040 --> 00:00:24,720
-a type of saturated fat that doesn't raise cholesterol.
+00:00:46,840 --> 00:00:50,840
+Le damos la forma deseada al chocolate cristalizado.
 
 12
-00:00:24,720 --> 00:00:28,020
-Also, dark chocolate can be really low in added sugars.
+00:00:50,840 --> 00:00:58,840
+Cubrimos el chocolate con otro papel transparente.
 
 13
-00:00:28,020 --> 00:00:30,300
-And, cacao contains flavanols.
+00:00:58,840 --> 00:01:01,840
+Damos forma de aro al chocolate, ajustando el papel transparente.
 
 14
-00:00:30,300 --> 00:00:32,180
-These antioxidants in dark chocolate
+00:01:01,840 --> 00:01:04,840
+Sujetamos el papel transparente con cinta adhesiva.
 
 15
-00:00:32,180 --> 00:00:33,740
-may help improve blood flow,
+00:01:04,840 --> 00:01:07,840
+Dejamos el chocolate en el refrigerador durante varias horas para que cristalice.
 
 16
-00:00:33,740 --> 00:00:36,140
-reduce inflammation, and lower cholesterol.
+00:01:07,840 --> 00:01:10,840
+Retiramos los papeles transparentes y ¡listo! Tenemos nuestros aros de chocolate.
 
 17
-00:00:36,140 --> 00:00:38,020
-And the darker the chocolate, the better.
+00:01:10,840 --> 00:01:14,840
+Puedes usar esta técnica para crear la forma que desees.
 
 18
-00:00:38,020 --> 00:00:40,940
-Look for high levels of cacao and bits of nuts and fruit
-
-19
-00:00:40,940 --> 00:00:42,980
-that can help balance any bitterness.
-
-20
-00:00:42,980 --> 00:00:45,580
-Dark chocolate is a habit you won't wanna break.
-
+00:01:14,840 --> 00:01:23,840
+¡Disfruta de tus deliciosos aros de chocolate!

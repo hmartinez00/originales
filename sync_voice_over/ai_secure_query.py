@@ -9,6 +9,10 @@ def ai_secure_query(command):
     input_file = r'consultas_gemini\quest.md'
     output_file = r'consultas_gemini\ask.md'
 
+    # Limpiamos el archivo de respuesta ask
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.writelines('')    
+
     with open(input_file, 'w', encoding='utf-8') as f:
         f.writelines(command)
     subprocess.run(["python", file_script])
@@ -34,11 +38,6 @@ def process_command(directory, ext, final_ext, command):
 
     files = find_files(directory, ext)
     for file in files:
-        # Limpiamos el archivo de respuesta ask
-        aks_file = r'consultas_gemini\ask.md'
-        with open(aks_file, 'w', encoding='utf-8') as f:
-            f.writelines('')
-
         # Abrir el archivo en modo lectura
         print(file)
         with open(file, 'r', encoding='utf-8') as archivo:
@@ -62,4 +61,3 @@ f'''{command}
         print(ask)
         with open(output_file, 'w', encoding='utf-8') as f:
             f.writelines(ask)
-            

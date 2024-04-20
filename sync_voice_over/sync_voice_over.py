@@ -10,7 +10,7 @@ def find_files(directory, ext):
                 f_files.append(os.path.join(root, file))
     return f_files
 
-def analizar_srt(original_srt):
+def analizar_srt(original_srt, traduccion_srt):
     """
     Función para analizar un archivo de subtítulos SRT.
 
@@ -24,8 +24,11 @@ def analizar_srt(original_srt):
     # Expresión regular para las marcas de tiempo
     regex_marca_tiempo = r"^\d+:\d+:\d+,\d+ --> \d+:\d+:\d+,\d+$"
 
-    with open(original_srt, "r", encoding="utf-8") as f:
+    with open(original_srt, "r") as f:
         lineas = f.readlines()
+
+    with open(traduccion_srt, "r") as f:
+        t_lineas = f.readlines()
     
     mark_index = [False for _ in range(len(lineas))]
 
@@ -44,9 +47,21 @@ def analizar_srt(original_srt):
             # Modificar la línea de marca de tiempo
             lineas[i] = mark_index[i]
 
+    # Bucle para iterar por las líneas
+    for i, t_linea in enumerate(t_lineas):
+        # Si la línea actual es una marca de tiempo
+        if re.match(regex_marca_tiempo, t_linea):
+            # Modificar la línea de marca de tiempo
+            t_lineas[i] = mark_index[i]
+
     # Escribir las líneas modificadas al archivo
-    with open(original_srt, "w", encoding="utf-8") as f:
+    with open(original_srt, "w") as f:
         f.writelines(lineas)
+
+    # Escribir las líneas modificadas al archivo
+    with open(traduccion_srt, "w") as f:
+        f.writelines(t_lineas)
+
 
 def get_video_duration(srt_file_path):
     """Extrae la duración del vídeo desde un archivo SRT.

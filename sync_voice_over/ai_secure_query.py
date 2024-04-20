@@ -34,8 +34,13 @@ def process_command(directory, ext, final_ext, command):
 
     files = find_files(directory, ext)
     for file in files:
-        print(file)
+        # Limpiamos el archivo de respuesta ask
+        aks_file = r'consultas_gemini\ask.md'
+        with open(aks_file, 'w', encoding='utf-8') as f:
+            f.writelines('')
+
         # Abrir el archivo en modo lectura
+        print(file)
         with open(file, 'r', encoding='utf-8') as archivo:
             # Leer el contenido del archivo
             r_linea = archivo.read()
@@ -51,7 +56,10 @@ f'''{command}
 
         print(output_file)
         print(prompt)
+        with open(output_file, 'w', encoding='utf-8') as f:
+            f.writelines('')
         ask = ai_secure_query(prompt)
         print(ask)
         with open(output_file, 'w', encoding='utf-8') as f:
             f.writelines(ask)
+            

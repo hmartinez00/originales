@@ -7,6 +7,7 @@
             "Extraer Audios",
             "verificar duracion de audio",
             "Traducir Subtitulos",
+            "Crear copies",
             "Ajustar Subtitulos",
             "Enviar prompt por voz",
             "Consultar a Gemini-Pro",
@@ -26,6 +27,7 @@
             "scripts/audio_extract.py",
             "scripts/verify_audio_tags.py",
             "scripts/translate.py",
+            "scripts\\copy_creator.py",
             "scripts/modify_translate.py",
             "scripts/voice.py",
             "scripts/app.py",
@@ -37,6 +39,6 @@
             "scripts\\consolidate.py",
             "scripts/add_script.py",
             "scripts\\test.py"
-        ]
+       ]
     ]
 }

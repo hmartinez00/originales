@@ -1,67 +1,71 @@
 1
-00:00:00,000 --> 00:00:02,400
-Les había prometido un pequeño tutorial de templeado y aquí lo tienen.
+00:00:00,000 --> 00:00:04,140
+Hoy hablaremos sobre la temperatura del chocolate o cómo hacer aros de chocolate.
 
 2
-00:00:02,400 --> 00:00:04,000
-Esto es para chocolate con leche.
+00:00:04,140 --> 00:00:09,980
+En la descripción, leeremos la definición de la temperatura o las curvas de temperatura de cada chocolate.
 
 3
-00:00:04,000 --> 00:00:06,400
-Comiencen a derretirlo a unos 45 grados.
+00:00:09,980 --> 00:00:14,500
+Para el chocolate negro, lo dividimos en trozos pequeños y lo derretimos al baño maría.
 
 4
-00:00:06,400 --> 00:00:11,200
-Una vez que esté bien derretido, agreguen un tercio de la cantidad total.
+00:00:14,500 --> 00:00:18,500
+Derretimos una pequeña cantidad de chocolate y la extendemos muy finamente.
 
 5
-00:00:11,200 --> 00:00:15,400
-O sea, si hubiera puesto 300 gramos, agrego 100 gramos, un tercio, ¿de acuerdo?
+00:00:18,500 --> 00:00:21,500
+El chocolate negro se derrite entre 50 y 55°C.
 
 6
-00:00:15,400 --> 00:00:22,400
-Dos chocolates finamente picados y voy a dejar que la temperatura baje a unos 26-27 grados.
+00:00:21,500 --> 00:00:26,840
+Agregamos la cantidad de chocolate derretido y una gota de chocolate negro con esta técnica.
 
 7
-00:00:22,400 --> 00:00:25,200
-No más, no sirve bajarlo más que eso.
+00:00:26,840 --> 00:00:29,840
+El chocolate negro debe tener una temperatura entre 28 y 29°C.
 
 8
-00:00:25,200 --> 00:00:29,600
-El objetivo es poner todas las moléculas de manteca de cacao a la misma temperatura.
+00:00:29,840 --> 00:00:36,840
+Una vez que el chocolate negro tiene una temperatura entre 28 y 29°C, lo colocamos en un baño maría y lo derretimos hasta que alcance una temperatura entre 31 y 32°C.
 
 9
-00:00:30,000 --> 00:00:34,400
-Una vez que todo esté bien derretido, debemos estar alrededor de 27 grados, perfecto.
+00:00:36,840 --> 00:00:38,840
+Vertemos el chocolate sobre un papel transparente y lo extendemos finamente.
 
 10
-00:00:34,400 --> 00:00:40,000
-Y lo volvemos a poner en el baño maría para subirlo a 28-29-30 grados como máximo.
+00:00:38,840 --> 00:00:46,840
+Dejamos que el chocolate cristalice por ambos lados.
 
 11
-00:00:40,000 --> 00:00:44,600
-Vamos a hacer una pequeña prueba, sumergimos un cuerno pequeño y en el momento en que se estire así,
+00:00:46,840 --> 00:00:50,840
+Le damos la forma deseada al chocolate cristalizado.
 
 12
-00:00:44,600 --> 00:00:48,000
-verán en el borde que ya no brilla, eso significa que está templado.
+00:00:50,840 --> 00:00:58,840
+Cubrimos el chocolate con otro papel transparente.
 
 13
-00:00:48,000 --> 00:00:50,800
-Ahora pueden verter su chocolate y usarlo.
+00:00:58,840 --> 00:01:01,840
+Damos forma de aro al chocolate, ajustando el papel transparente.
 
 14
-00:00:50,800 --> 00:00:54,800
-Lo más difícil es mantenerlo a temperatura, lo ideal es jugar un poco con el baño maría.
+00:01:01,840 --> 00:01:04,840
+Sujetamos el papel transparente con cinta adhesiva.
 
 15
-00:00:54,800 --> 00:00:57,200
-Y listo, si quieren otros tutoriales, no duden en decírmelo en los comentarios.
+00:01:04,840 --> 00:01:07,840
+Dejamos el chocolate en el refrigerador durante varias horas para que cristalice.
 
 16
-00:00:57,200 --> 00:00:58,400
-Les mando besos, que tengan una buena noche.
+00:01:07,840 --> 00:01:10,840
+Retiramos los papeles transparentes y ¡listo! Tenemos nuestros aros de chocolate.
 
 17
-00:00:59,600 --> 00:01:02,600
-Subtítulos realizados por la comunidad de Amara.org
+00:01:10,840 --> 00:01:14,840
+Puedes usar esta técnica para crear la forma que desees.
+
+18
+00:01:14,840 --> 00:01:23,840
+¡Disfruta de tus deliciosos aros de chocolate!

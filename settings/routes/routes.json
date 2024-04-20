@@ -15,6 +15,7 @@
             "Extraer datos Tiktok",
             "Guardar en traducidos",
             "crear directorio sincronizar",
+            "Consolidar traduccion",
             "Agregar nuevo script",
             "Ejecutar prueba"
         ],
@@ -33,6 +34,7 @@
             "scripts/inspection_tiktok.py",
             "scripts/organizer.py",
             "scripts/synchronized_files_organizer.py",
+            "scripts\\consolidate.py",
             "scripts/add_script.py",
             "scripts\\test.py"
         ]

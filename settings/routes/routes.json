@@ -25,7 +25,7 @@
             "scripts/video_extractor_pin.py",
             "scripts/video_extractor_tiktok.py",
             "scripts/audio_extract.py",
-            "scripts/verify_audio_tags.py",
+            "scripts/verify_audio_tags2.py",
             "scripts/translate.py",
             "scripts\\copy_creator.py",
             "scripts/modify_translate.py",

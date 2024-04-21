@@ -1,6 +1,6 @@
 import os
 import re
-
+import mutagen.mp3
 
 def find_files(directory, ext):
     f_files = []
@@ -9,6 +9,32 @@ def find_files(directory, ext):
             if file.endswith(ext):
                 f_files.append(os.path.join(root, file))
     return f_files
+
+def find_all_files(directory, extensions):
+    # Buscando archivos
+    files = []
+    for ext in extensions:
+        # print(ext)
+        lista = find_files(directory, ext)
+        files.extend(lista)
+
+    return files
+
+def name_detector(file_url):
+    directory = os.path.dirname(file_url)
+    filename = os.path.basename(file_url)
+    if ' - ' in filename:
+        tag = filename.split(' - ')[0]
+    else:
+        tag = filename.split('.')[0]
+    
+    # Identificar archivos de lote
+    archivos_asociados = []
+    for archivo in os.listdir(directory):
+        if tag in archivo:
+            archivos_asociados.append(archivo)
+
+    return tag, archivos_asociados
 
 def analizar_srt(original_srt, traduccion_srt):
     """
@@ -96,3 +122,16 @@ def get_video_duration(srt_file_path):
 
 
     return round(tiempo_segundos)
+
+def get_mp3_duration(audio_url):
+
+    if os.path.isfile(audio_url):
+        # Obtener el archivo MP3
+        audio = mutagen.mp3.MP3(audio_url)
+
+        # Obtener la duración en segundos
+        audio_duracion = round(audio.info.length)
+    else:
+        audio_duracion = "Error!"
+    
+    return audio_duracion

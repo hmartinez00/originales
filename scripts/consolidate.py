@@ -2,7 +2,7 @@ import os
 import shutil
 import tkinter as tk
 from tkinter import filedialog
-from sync_voice_over.sync_voice_over import find_files
+from sync_voice_over.sync_voice_over import find_all_files
 
 
 root = tk.Tk()
@@ -26,11 +26,7 @@ extensiones = [
 ]
 
 # Buscando archivos
-files = []
-for ext in extensiones:
-    # print(ext)
-    lista = find_files(video_dir, ext)
-    files.extend(lista)
+files = find_all_files(video_dir, extensiones)
 
 for file in files:
     # Comprobar si el título del archivo contiene el título del video

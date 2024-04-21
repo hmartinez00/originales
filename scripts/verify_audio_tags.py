@@ -5,7 +5,7 @@ from tkinter import filedialog
 from sync_voice_over.sync_voice_over import find_files
 
 
-def evaluar_sincronizacion(audio_url):
+def evaluar_sincronizacion(audio_url, ext):
     import os
     import mutagen.mp3
     from sync_voice_over.sync_voice_over import get_video_duration
@@ -21,7 +21,7 @@ def evaluar_sincronizacion(audio_url):
     audio_duracion = round(audio.info.length)
 
     # Ejemplo de uso
-    srt_file_name = audio_name.replace('.mp3', '.srt')
+    srt_file_name = audio_name.replace('.mp3', ext)
     srt_file_path = os.path.join(audio_dir, srt_file_name)
     video_duration = get_video_duration(srt_file_path)
 
@@ -41,12 +41,12 @@ root = tk.Tk()
 root.withdraw()
 
 directory = filedialog.askdirectory()
-ext = '.mp3'
-
+ext1 = '.mp3'
+ext2 = ' - traducido.srt'
 general_output = []
-files = find_files(directory, ext)
+files = find_files(directory, ext1)
 for audio_url in files:
-    general_output.append(evaluar_sincronizacion(audio_url))
+    general_output.append(evaluar_sincronizacion(audio_url, ext2))
 
 columns = ['name', 'audio', 'video', 'diference']
 

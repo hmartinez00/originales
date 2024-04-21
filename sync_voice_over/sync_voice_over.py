@@ -1,5 +1,6 @@
 import os
 import re
+import shutil
 import mutagen.mp3
 
 def find_files(directory, ext):
@@ -32,9 +33,15 @@ def name_detector(file_url):
     archivos_asociados = []
     for archivo in os.listdir(directory):
         if tag in archivo:
-            archivos_asociados.append(archivo)
+            archivos_asociados.append(os.path.join(directory, archivo))
 
     return tag, archivos_asociados
+
+def move_batch(file_url, directory):
+    file_list = name_detector(file_url)[1]
+    for file in file_list:
+        new_file = os.path.join(directory, os.path.basename(file))
+        shutil.move(file, new_file)
 
 def analizar_srt(original_srt, traduccion_srt):
     """

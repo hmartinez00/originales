@@ -40,24 +40,27 @@ root = tk.Tk()
 root.withdraw()
 directory = filedialog.askdirectory()
 
+# Definimos la extension de los archivos originales
 ext1 = '.mp3'
+# Definimos las extensiones de los archivos a sincronizar
 ext2 = ' - traducido.mp3'
 ext3 = ' - modificado.mp3'
-
+# Medimos sincronizacion
 traducidos_output = []
 modificados_output = []
 files = find_files(directory, ext1)
 for audio_url in files:
-    traducidos_output.append(evaluar_sincronizacion(audio_url, ext1, ext2))
-    modificados_output.append(evaluar_sincronizacion(audio_url, ext1, ext3))
+    if ext2 in audio_url:
+        traducidos_output.append(evaluar_sincronizacion(audio_url, ext1, ext2))
+    elif ext3 in audio_url:
+        modificados_output.append(evaluar_sincronizacion(audio_url, ext1, ext3))
 
+# Creamos los dataframes de reporte
 columns = ['name', 'video', 'audio', 'diference']
-
-# Convertir la lista en un dataframe
 df1 = pd.DataFrame(traducidos_output, columns=columns)
 df2 = pd.DataFrame(modificados_output, columns=columns)
 
-# Mostrar el dataframe
+# Mostramos los repotes
 print('\nEvaluacion con traducidos')
 print(df1)
 print('\nEvaluacion con modificados')

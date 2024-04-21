@@ -17,6 +17,7 @@
             "Guardar en traducidos",
             "Crear directorio sincronizar",
             "Consolidar traduccion",
+            "Mover lote de archivos",
             "Agregar nuevo script",
             "Ejecutar prueba"
         ],
@@ -37,8 +38,9 @@
             "scripts/organizer.py",
             "scripts/synchronized_files_organizer.py",
             "scripts\\consolidate.py",
+            "scripts\\move_batch.py",
             "scripts/add_script.py",
             "scripts\\test.py"
-       ]
+        ]
     ]
 }

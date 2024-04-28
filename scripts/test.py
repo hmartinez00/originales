@@ -1,7 +1,13 @@
-from sync_voice_over.json_queries import dir_access, json_query
+import pandas as pd
+from sync_voice_over.json_queries import dir_access, json_query, date_str, export
 
-key='urls'
-json_file = dir_access(key)
-links = json_query(json_file)[key]
+date = date_str()
 
-print(links)
+# Exportar a csv
+data = pd.DataFrame({
+    'links'     : ['links'],
+    'titles'    : ['titles'],
+    'paragraphs': ['paragraphs'],
+})
+file = 'summary_' + date + '.xlsx'
+export(data, file)

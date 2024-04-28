@@ -1,4 +1,9 @@
 {
+    "directories": {
+        "api"   : "settings/api/settings.json",
+        "voice" : "settings/voice/voice_comand_settings.json",
+        "urls"  : "settings/routes/urls.json"
+    },
     "exec": [
         [
             "Hacer commit automatico",

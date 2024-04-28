@@ -1,11 +1,19 @@
-1
-00:00:00,000 --> 00:00:05,520
-Vamos a hacer barras de proteína de chocolate y mantequilla de maní, son muy buenas y fáciles de hacer.
+**Título: ¡La galleta de tus sueños hecha realidad!**
 
-2
-00:00:05,520 --> 00:00:10,400
-Primero, mezcla los ingredientes húmedos y luego los secos. Presiona en un molde para pan forrado.
+* ¿Cansado de hacer un montón de galletas? ¡Prueba esta receta para una sola porción! 😋
+* ¡Cremosa, masticable y perfecta para cuando el antojo te ataca! 🍫🍪
+* Solo necesitas 10 minutos para disfrutar de la mejor galleta de chocolate doble 🤤
+* ¡Ingredientes simples y fáciles de encontrar! ✅
+* #GalletadeChocolateDoble #RecetaParaUnaSolaPorcion #PostresFaciles #DeliciasCaseras #AntojosDulces #ChocolateLover #DulceTentacion #RecetasVirales #CocinaConAmor
 
-3
-00:00:10,400 --> 00:00:17,120
-Cubre con chocolate derretido y refrigera hasta que endurezca. Luego corta en barras. ¡Disfruta!
+**Ingredientes:**
+
+* 2 cucharadas de mantequilla ablandada
+* 4 cucharadas de azúcar morena
+* 1 yema de huevo
+* 1/4 cucharadita de extracto de vainilla
+* 1/8 cucharadita de sal
+* 1/8 cucharadita de bicarbonato de sodio
+* 1 cucharada y media de cacao en polvo procesado holandés
+* 4 cucharadas de harina de uso múltiple
+* 3 cucharadas de chispas de chocolate semi-dulce

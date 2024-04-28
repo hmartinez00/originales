@@ -2,22 +2,15 @@ import os
 import pandas as pd
 import tkinter as tk
 from tkinter import filedialog
+from sync_voice_over.json_queries import dir_access, json_query
 from sync_voice_over.module_extractor import extract_values_tag, download_video
 
 
+# Replace with the desired URL
 url = "https://pinterestdownloader.com/es"
-links = [
-    'https://pin.it/1rl8tUIn3',
-    'https://pin.it/5UAG8iZW4',
-    'https://pin.it/61zJzk19Z',
-    # 'https://pin.it/4ysyJqlwe',
-    # 'https://pin.it/6bhGRDJge',
-    # 'https://pin.it/6JStDi4Pu',
-    # 'https://pin.it/2OlX4rqQO',
-    # 'https://pin.it/fUqtnGJcb',
-    # 'https://pin.it/1RuEqesXI',
-    # 'https://pin.it/2d4exY0Nq',
-]  # Replace with the desired URL
+key='urls'
+json_file = dir_access(key)
+links = json_query(json_file)[key]
 
 root = tk.Tk()
 root.withdraw()

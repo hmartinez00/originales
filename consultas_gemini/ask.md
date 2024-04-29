@@ -1,23 +1,11 @@
-Para extraer el contenido de texto de la etiqueta `yt-attributed-string` proporcionada, puedes utilizar el siguiente código en Python:
+**Dolores:**
 
-```python
-from bs4 import BeautifulSoup
+* **Incapacidad para cocinar:** "No me canso de hacerla, fácil y rica." (patinetaser25)
+* **Falta de conocimiento culinario:** "Es increíble como logras hacer recetas sencillas y que jamás hayamos visto la mayoría de nosotros." (ez-ix7tq)
+* **Dificultad para encontrar recetas fáciles y sabrosas:** "Es muy difícil encontrar a alguien de Europa Oriental que cocine tan rico y que hable español." (cindyarellanogonzalez8332)
 
-# Crea un objeto BeautifulSoup a partir de la cadena HTML
-soup = BeautifulSoup(html, "html.parser")
+**Miedos:**
 
-# Encuentra todas las etiquetas `yt-attributed-string`
-comments = soup.find_all("yt-attributed-string")
-
-# Extrae el contenido de texto de cada etiqueta
-textos = [comment.text for comment in comments]
-
-# Imprime el resultado
-print(textos)
-```
-
-Esto imprimirá una lista con los tres fragmentos de texto contenidos en las etiquetas `yt-attributed-string` proporcionadas:
-
-```
-['Me pregunto¿ porque alguien podria darle "no me gusta" al video de alguien q trata de enseñarte algo?, sobre todo algo tan delicioso, me encanta como explica sus recetas y ademas se ven todas exquisitas, muchas gracias', 'Me quedo tan buena que ahora es el postre que mas vendo. Gracias, Esbieta.', 'Desde que te conocimos, ya no necesitamos ninguna escuela de cocina. Las superaste a todas!! Gracias por tu canal. Es una maravilla!']
-```
+* **Fracaso en la cocina:** "Dije "si me sale, me suscribo" y aquí estoy suscrita." (Klaudiniux)
+* **Intimidación por la complejidad:** "Esta mujer es extraterrestre?...todo le sale facil, rico y rapido. Debe ser la la Liga Intergalactica de Cocineros!" (gp9401)
+* **Temor a arruinar la receta:** "Me costó rallar la masa." (evangelinarepetto2667)

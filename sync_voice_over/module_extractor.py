@@ -15,7 +15,8 @@ def extract_values_tag(url, tag):
     values = soup.find_all(tag)
     content = []
     for value in values:
-        content.append(value.text)
+        # content.append(value.text)
+        content.append(value)
     
     return content
 

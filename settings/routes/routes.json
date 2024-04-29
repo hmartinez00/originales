@@ -1,8 +1,8 @@
 {
     "directories": {
-        "api"   : "settings/api/settings.json",
-        "voice" : "settings/voice/voice_comand_settings.json",
-        "urls"  : "settings/routes/urls.json"
+        "api": "settings/api/settings.json",
+        "voice": "settings/voice/voice_comand_settings.json",
+        "urls": "settings/routes/urls.json"
     },
     "exec": [
         [
@@ -24,7 +24,8 @@
             "Consolidar traduccion",
             "Mover lote de archivos",
             "Agregar nuevo script",
-            "Ejecutar prueba"
+            "Ejecutar prueba",
+            "Inspeccionar html"
         ],
         [
             "scripts/git_update.py",
@@ -45,7 +46,8 @@
             "scripts\\consolidate.py",
             "scripts\\move_batch.py",
             "scripts/add_script.py",
-            "scripts\\test.py"
+            "scripts\\test.py",
+            "scripts\\webscraper.py"
         ]
     ]
 }

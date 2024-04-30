@@ -1,55 +1,69 @@
-Vas a actuar como un especialista en Marketing Digital. tengo un conjunto de comentarios a un video en formato json, donde cada clave es un usuario, y cada valor es el comentario asociado a su usuario. Quiero que extraigas una lista enumerada de todos los dolores y miedos que detectes. Por cada item de la lista, agrega a los usuarios en los cuales detectaste el miedo o dolor:
+Como convierto el diccionario "json_dict" en el siguiente codigo en un Dataframe de python, con una columna denominada "Usuario" que contiene las claves del diccionario y una columna denominada "Texto" que contiene los valores correspondientes:
 
-```json
-{
-    "vivianamoralesnorambuena8788": "Me pregunto\u00bf porque alguien podria darle \"no me gusta\" al video de alguien q trata de ense\u00f1arte algo?, sobre todo algo tan delicioso, me encanta como explica sus recetas y ademas se ven todas exquisitas, muchas gracias",
-    "toxianders345": "Me quedo tan buena que ahora es el postre que mas vendo. Gracias, Esbieta.",
-    "lauram7": "Desde que te conocimos, ya no necesitamos ninguna escuela de cocina. Las superaste a todas!! Gracias por tu canal. Es una maravilla!",
-    "AlejandraGonzalez-qc1it": "Me encanto eso de rayar la mantequilla!",
-    "Klaudiniux": "Dije \" si me sale, me suscribo\" y aqu\u00ed estoy suscrita yo la rellen\u00e9 de manzana con canela y qued\u00f3 delicioso, 100% recomendado ",
-    "ez-ix7tq": "Es incre\u00edble como logras hacer recetas sencillas y que jam\u00e1s hayamos visto la mayor\u00eda de nosotros.",
-    "patinetaser25": "No me canso de hacerla  , con ar\u00e1ndanos, con ciruelas , con manzanas , con durazno , con moras  y con mango  es mi preferida f\u00e1cil y rica . Mil gracias estar\u00e9 eternamente agradecida con Sbieta por haber compartido.",
-    "mariapizarro3216": "Que esquisitez lo prepar\u00e9 ma\u00f1ana, pues tengo ar\u00e1ndanos congelados saludos desde Chile",
-    "yolandamartinez6086": "ERES MUY LINDA EXPLICAS MUY BIEN Y TUS RECETAS SON DELICIOSAS DIOS TE CUIDE UN ABRAZO DESDE LA CDAD.DE MEXICO. TENGO 82 A\u00d1OS Y SIEMPRE APRENDE UNO A CUALQUIER EDAD ",
-    "cindyarellanogonzalez8332": "Es incre\u00edble todo lo que haces, es muy dif\u00edcil encotrar a alguien de Europa Oriental que cocine tan rico y que hable espa\u00f1ol. Que afortunados somos de tenerte en este canal. Gracias!",
-    "silviamoreno2108": "Esbieta  ,no me canso de ver todas sus recetas, heres  muy querida por  mi y mi familia,  muchas gracias, bonita  heres tan amable y sencilla",
-    "isidoraadriasola2272": "Lo prepar\u00e9 hace unos d\u00edas y qued\u00f3 buen\u00edsimo!!!\ud83e\ude77 Muchas gracias!! A todos les encant\u00f3 jsksjs",
-    "davidrestrepo1441": "Es incre\u00edble como logra siempre estar tan sofisticada y elegante.",
-    "pandamundi1819": "SOS LO MAXIMO \u00a1\u00a1\u00a1pocos ingredientes ,pasos sencillos  lenguaje claro nada de cosas exoticas y ademas  comibles desde la primera prueba \u00a1\u00a1\u00a1\u00a1desde ARGENTINA ,TE FELICITO",
-    "fraublumen6951": "Esa torta se come mucho en Alemania a la hora del caf\u00e9 de la tarde la hacen de vallas moras, frambuesas, casi todas  las panader\u00edas la venden y all\u00e1 las alemanas mayormente saben preparar muchas tortas. Gracias Esbieta por ense\u00f1arnos la preparaci\u00f3n, se ve f\u00e1cil.",
-    "superduper6156": "Me encanta todo lo que esta bella mujer hace. Todo lo que cocina es riqu\u00edsimo y muy f\u00e1cil, adem\u00e1s todo lo explica muy bien.",
-    "beppobarrendero74": "Lo q m\u00e1s me gusta es ver como disfrutas comiendo!!! Besos",
-    "anamarianasandu6652": "Tienes razon que es una tarta muy conocida en Europa de Este. Yo soy de Rumania, tengo 65 a\u00f1os  te confieso que es la primera tarta que aprend\u00ed hacer quando era muy joven. Gracias por recordar y felicidades por tu canal.",
-    "MyPrinces23": "Esta es la tarta de mi infancia que rico \u2026",
-    "mar191": "Nos tienes enamorados a todos!! \n\n",
-    "mamatecha": "Qu\u00e9 linda! Mi madre,era Ucraniana y desde ni\u00f1a,he visto C\u00f3mo la hac\u00edan!!!",
-    "yolandabernal4134": "Ok Esbieta, que facil se ve, otra que hare; con respeto te dire, Muy hermosa tu  blusa gracias por compartirlo. \ufe0f",
-    "ameliavillarias9727": "Es un amor de mujer, da las explicaciones claras, ordenadas y con una elegancia y sencillez que te cautiva. Un besuco",
-    "ritarodrigues9946": "Love your teaching, thank you beautiful Svieta:  Grandma Houston, Tx",
-    "magnoliaguerra8838": "Me encantas tus recetas. Bendiciones Sbieta",
-    "SandraPerez-qg5tb": "Esbieta me encanta tu canal explicas muy bien  y es genial aprender  gracias",
-    "eugenianarvaez1792": "Ya soy tu fan !! Me gusta como trabajas y me transmites una buena vibra que hasta me dan ganas de hacer tus recetas al d\u00eda siguiente  Felicidades Esbieta",
-    "fabiolacandia7654": "Me sorprende lo f\u00e1cil y rica que se ve , me sorprendes.",
-    "MariaFlores-mt5pv": "Todas tus resetas est\u00e1 buen\u00edsimas y muy f\u00e1cil de haser podr\u00edas tomarnos en cuenta alguno postre para las personas diab\u00e9ticas  y igual de fasil de haser te veo desde Mty N L eres una persona muy carism\u00e1tica dulce y con mucha paciencia gracias por compartir tu conocimientos Felicidades",
-    "ximenaeidelstein2849": "gracias por tus recetas , eres encantadora \ud83c\udde8\ud83c\uddf1\ud83c\udde8\ud83c\uddf1\ud83c\udde8\ud83c\uddf1",
-    "anaojeda8663": "Segu\u00ed al pie de la letra la receta del biscocho Genov\u00e9s y me sali\u00f3 hermoso!!! Gracias por explicar tan bien.",
-    "gp9401": "Pero esta mujer es extraterrestre?...todo le sale facil, rico y rapido. Debe ser la la Liga Intergalactica de Cocineros! saludos!",
-    "libertadyhonor5894": "Madre m\u00eda,,, encantada de tus v\u00eddeos",
-    "ruthhernandez4536": "Dios siga bendiciendo tus manos",
-    "mcaa70": "La he hecho ya varias veces. En verdad es f\u00e1cil y deliciosa. Muchas gracias, Esbieta. Por favor, danos la receta de una tarta de lim\u00f3n.",
-    "silvainilla-vmb": "\u00a1Excelente!, Justo buscaba una receta para una tarta y apareci\u00f3 este video en mis notificaciones ",
-    "anacanamero9513": "Maravillosa como siempre ",
-    "anauzal5670": "Exquisita y sin ser demasiado dulce... ",
-    "soledaddiaz4094": "Querida Esbieta: esta tarta se ve riqu\u00edsima  en cuanto consiga ar\u00e1ndanos, voy a hacerla!! Saludos desde Argentina \ufe0f",
-    "jorgekalas7660": "Hoy la hice en casa con moras de mi ciudad, y quedamos maravillados.",
-    "patriciagomez9210": "EXQUISITA LA VOY HACER !!!!",
-    "lorenaortiz2693": "Holaa..no sabia q se podia rallar Saludos desde Argentina \ud83c\udde6\ud83c\uddf7",
-    "artemundo9873": "Me alegro tanto que tengas tanto seguidores me acuerdo cuando empezaste soy de las primeras en suscribirse a este canal tan maravilloso mil bendiciones   siempre tan contenta por tu crecimiento te lo mereces ",
-    "rosariosantos2825": " Me uurrrrrgeee cambiar mi estufa!!!! Necesito un horno pa' no quedarme con las ganas de aprender tus recetas, querida Esbieta!!!   Desde M\u00e9xico !!!!",
-    "TeresaZamora-vl8fp": "Se me hizo agua la boca cuando la prob\u00f3..q rico",
-    "renemartinez3231": "Muchas gracias adoro tus recetas  no dengues de mandar recetas",
-    "hydrapoison4159": "La diosa de los postres ",
-    "evangelinarepetto2667": "La rellene con quinotos en alm\u00edbar. Qued\u00f3 espectacular! Me cost\u00f3 rallar la masa",
-    "jesuseselcaminolaverdadyla4708": "Woww. Excelente Dios te bendiga mujer"
-}
+
+```python
+import os
+import json
+import pandas as pd
+import tkinter as tk
+from tkinter import filedialog
+from bs4 import BeautifulSoup
+from sync_voice_over.json_queries import export
+
+
+label_user      = '              @'
+label_comment   = '<yt-pdg-comment-chip-renderer'
+
+# Seleccionamos el directorio
+root = tk.Tk()
+root.withdraw()
+file = filedialog.askopenfilename()
+output_file = os.path.join(os.path.dirname(file), 'output.json')
+output_users = os.path.join(os.path.dirname(file), 'output_users.txt')
+output_textos = os.path.join(os.path.dirname(file), 'output_textos.txt')
+
+with open(file, 'r', encoding='utf-8') as f:
+    html_tags = f.readlines()
+
+users = []
+lines = []
+html_string = ''
+for tag in html_tags:
+    if label_user in tag:
+        users.append(tag.replace(label_user, ''))
+    if label_comment in tag:
+        lines.append(tag)
+
+print(len(users), len(lines))
+
+# Crea un objeto BeautifulSoup para cada línea
+soup_list = []
+for line in lines:
+    soup_list.append(BeautifulSoup(line, "html.parser"))
+
+# Extrae el texto de cada objeto BeautifulSoup
+texts = [soup.text for soup in soup_list]
+
+# Imprime los textos extraídos
+# print(texts)
+
+# Guardando usuarios
+with open(output_users, 'w', encoding='utf-8') as f:
+    f.writelines(users)
+
+# Guardando valores
+with open(output_textos, 'w', encoding='utf-8') as f:
+    f.writelines(texts)
+
+# Imprime el resultado
+json_dict = {}
+for i, key in enumerate(users):
+    value = texts[i]
+    json_dict[str(key).replace('\n', '')] = value
+
+output_content = json.dumps(json_dict, indent=4)
+with open(output_file, 'w', encoding='utf-8') as f:
+    f.writelines(output_content)
+
+
 ```

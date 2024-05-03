@@ -1,11 +1,12 @@
 import os
+import re
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
 
-def extract_values_tag(url, tag):
+def extract_values_tag(url: str, tag: str) -> list:
 
     response = requests.get(url)
     html_content = response.content
@@ -19,6 +20,35 @@ def extract_values_tag(url, tag):
         content.append(value)
     
     return content
+
+def html_format(file):
+
+    # Leer el código HTML desde un archivo
+    with open(file, "r", encoding='utf-8') as f:
+        html = f.read()
+
+    # Reemplazar múltiples espacios en blanco con un solo espacio
+    html = re.sub(" +", " ", html)
+
+    # Agregar saltos de línea después de las etiquetas de apertura y cierre
+    html = html.replace(">", ">\n")
+    html = html.replace("<", "\n<")
+
+    # Agregar sangría a las etiquetas anidadas
+    indentacion = 0
+    lineas = html.split("\n")
+    for i, linea in enumerate(lineas):
+        if linea.startswith("</"):
+            indentacion -= 1
+        lineas[i] = " " * indentacion + linea
+        if linea.startswith("<"):
+            indentacion += 1
+
+    # Unir las líneas y escribir el código HTML corregido en un archivo
+    output_lines = "\n".join(lineas)
+
+    return output_lines
+
 
 def download_video(url, link, title, directory):
 

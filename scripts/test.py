@@ -1,58 +1,48 @@
-import requests
-from bs4 import BeautifulSoup
+import os
+import json
 import pandas as pd
+import tkinter as tk
+from tkinter import filedialog
+from bs4 import BeautifulSoup
+from sync_voice_over.json_queries import export
 
-def get_elements(keyword, num_results):
 
-    base_url = "https://www.tiktok.com/discover/{}?lang=es"
-    url = base_url.format(keyword)
-    response = requests.get(url)
-    results = []
+labels = [
+    '              @',
+    '<yt-pdg-comment-chip-renderer',
+]
 
-    if response.status_code == 200:
-        soup = BeautifulSoup(response.text, 'html.parser')
-        h4_topic_elements = soup.find_all("h4", attrs={"data-e2e": "topic-name"})
-        h4_hashtags_elements = soup.find_all("h4", attrs={"data-e2e": "hashtags-name"})
+# Seleccionamos el directorio
+root = tk.Tk()
+root.withdraw()
+file = filedialog.askopenfilename()
+output_file = os.path.join(os.path.dirname(file), 'output_.json')
 
-        keywords = [h4.text.strip() for h4 in h4_topic_elements[:num_results]]
-        hashtags = [h4.text.strip() for h4 in h4_hashtags_elements[:num_results]]
+with open(file, 'r', encoding='utf-8') as f:
+    html_tags = f.readlines()
 
-        for kw in keywords:
-            results.append((keyword, kw, hashtags))
+info = {}
+html_string = ''
+for label in labels:
+    list_values = []
+    for tag in html_tags:
+        if label in tag:
+            # Extrae el texto de cada objeto BeautifulSoup
+            list_values.append(BeautifulSoup(tag, "html.parser"))
+    texts = [soup.text for soup in list_values]
+    info[label] = texts
 
-    return results
+for key in info.keys():
+    print(f'{key}: {len(info[key])}')
 
-def format_keyword(keyword: str) -> str:
-    return keyword.replace(" ", "-")
+output_content = json.dumps(info, indent=4)
+with open(output_file, 'w', encoding='utf-8') as f:
+    f.writelines(output_content)
 
-initial_keyword = input("Por favor, introduce la palabra clave inicial: ")
-formatted_keyword = format_keyword(initial_keyword)
-
-base_url = "https://www.tiktok.com/discover/{}?lang=es"
-url = base_url.format(formatted_keyword)
-response = requests.get(url)
-
-if response.status_code == 200:
-    iterations = int(input("Por favor, introduce el numero de veces que quieres ejecutar el bucle: "))
-    num_results = int(input("Por favor, introduce el numero de resultados que deseas obtener en cada iteracion: "))
-    
-    initial_keywords = [formatted_keyword]
-    all_results = []
-
-    for _ in range(iterations):
-        new_results = []
-        for keyword in initial_keywords:
-            elements = get_elements(keyword, num_results)
-            new_results.extend(elements)
-        initial_keywords = [format_keyword(result[1]) for result in new_results]
-        all_results.extend(new_results)
-
-    print(all_results)
-
-    columns = ["Initial Keyword", "Keyword", "Hashtags"]
-    # data = [[result[0], result[1], ", ".join(result[2])] for result in all_results]
-
-    # df = pd.DataFrame(data, columns=columns)
-    # print(df)
-else:
-    print("La palabra clave no devolvió una respuesta válida. Por favor, intenta con otra palabra clave.")
+output_xlsx = os.path.join(os.path.dirname(file), 'output.xlsx')
+df = pd.DataFrame.from_dict(info) #, orient='index')
+# df.columns = ["Texto"]
+# df.reset_index(inplace=True)
+# df.rename(columns={"index": "Usuario"}, inplace=True)
+print(df)
+export(df, output_xlsx)

@@ -9,8 +9,8 @@ from sync_voice_over.module_extractor import html_format, extract_html_values_ta
 
 
 # date = date_str()
-# json_file = dir_access('urls')
-# labels = json_query(json_file)['tiktok']
+json_file = dir_access('urls')
+labels = json_query(json_file)['tiktok']
 
 # Seleccionamos el directorio
 root = tk.Tk()
@@ -22,18 +22,20 @@ with open(file, 'r', encoding='utf-8') as f:
     html_tags = f.read()
 
 soup = BeautifulSoup(html_tags, "lxml")
-a_values = [value for value in soup.find_all('a') if 'title=' in str(value)]
-strong_values = [value for value in soup.find_all('strong') if 'data-e2e="video-views"' in str(value)]
+a_values = [value for value in soup.find_all('a') if labels[0] in str(value)]
+strong_values = [value for value in soup.find_all('strong') if labels[1] in str(value)]
+svg_values = [value for value in soup.find_all('path') if labels[3] in str(value)]
 
-
-titles = [str(item['title']) + '\n' for item in a_values]
-hrefs  = [str(item['href']) + '\n' for item in a_values]
-views  = [item.text + '\n' for item in strong_values]
+titles  = [str(item['title']) + '\n' for item in a_values]
+hrefs   = [str(item['href']) + '\n' for item in a_values]
+views   = [item.text + '\n' for item in strong_values]
+audios  = [item.text + '\n' for item in svg_values]
 
 info = {}
 info['titles']  = titles
 info['hrefs']   = hrefs
 info['views']   = views
+# info['audios']  = audios
 
 # Generamos los Reportes
 user = hrefs[0].split('/')[3]

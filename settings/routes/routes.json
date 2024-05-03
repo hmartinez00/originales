@@ -25,7 +25,8 @@
             "Mover lote de archivos",
             "Agregar nuevo script",
             "Ejecutar prueba",
-            "Inspeccionar html"
+            "Inspeccionar html youtube",
+            "Inspeccionar html tiktok"
         ],
         [
             "scripts/git_update.py",
@@ -47,7 +48,8 @@
             "scripts\\move_batch.py",
             "scripts/add_script.py",
             "scripts\\test.py",
-            "scripts\\webscraper.py"
+            "scripts\\webscraper.py",
+            "scripts\\webscraper_tiktok.py"
         ]
     ]
 }

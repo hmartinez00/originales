@@ -1,3 +1,10 @@
-Como obtengo todas la etiquetas 'a' de un texto html pero espcificamente los valores de sus atributos "title" con Bs4, considerando la posibilidad de que algunas etiquetas 'a' No tengan atributo title declarado?
+Por que falla este codigo?
 
-<div class="css-x08n0t-DivTranscriptContent e4p686t18">¡Mira estas minis tartitas de limón que son espectaculares! Lo primero que vamos a hacer es la masa, aquí te dejo todos los ingredientes para que puedas hacerla y para la crema de limón vamos a necesitar un limón, dos huevos y 40g de azúcar. Nada más lo vamos a decorar con merengue y listo, quedan espectaculares. ¡Si querés más recetas de repostería seguime!</div>
+
+output_file = 'output.txt'
+
+soup = BeautifulSoup(html_tags, "lxml")
+values = soup.find_all('a')
+
+with open(output_file, 'w', encoding='utf-8') as f:
+    f.writelines(values)

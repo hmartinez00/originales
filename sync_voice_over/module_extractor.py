@@ -21,6 +21,18 @@ def extract_values_tag(url: str, tag: str) -> list:
     
     return content
 
+def extract_html_values_tag(html_content: str, tag: str) -> list:
+    soup = BeautifulSoup(html_content, 'html.parser')
+
+    # Extract values content after interacting with elements
+    values = soup.find_all(tag)
+    content = []
+    for value in values:
+        # content.append(value.text)
+        content.append(value)
+    
+    return content
+
 def html_format(file):
 
     # Leer el código HTML desde un archivo
@@ -34,21 +46,24 @@ def html_format(file):
     html = html.replace(">", ">\n")
     html = html.replace("<", "\n<")
 
-    # Agregar sangría a las etiquetas anidadas
-    indentacion = 0
+    # # Agregar sangría a las etiquetas anidadas
+    # indentacion = 0
     lineas = html.split("\n")
-    for i, linea in enumerate(lineas):
-        if linea.startswith("</"):
-            indentacion -= 1
-        lineas[i] = " " * indentacion + linea
-        if linea.startswith("<"):
-            indentacion += 1
+    # for i, linea in enumerate(lineas):
+    #     if linea.startswith("</"):
+    #         indentacion -= 1
+    #     lineas[i] = " " * indentacion + linea
+    #     if linea.startswith("<"):
+    #         indentacion += 1
 
     # Unir las líneas y escribir el código HTML corregido en un archivo
     output_lines = "\n".join(lineas)
 
-    return output_lines
+    # output_file = os.path.join(os.path.dirname(file), f'output.html')
+    # with open(output_file, 'w', encoding='utf-8') as f:
+    #     f.write(output_lines)
 
+    return output_lines
 
 def download_video(url, link, title, directory):
 

@@ -4,7 +4,11 @@
         "https://www.pinterest.es/pin/829788300124259835/"
     ],
     "youtube": [
-            "              @",
-            "<yt-pdg-comment-chip-renderer"
-        ]
+        "              @",
+        "<yt-pdg-comment-chip-renderer"
+    ],
+    "tiktok": [
+        "<a title=",
+        "data-e2e=\"video-views\""
+    ]
 }

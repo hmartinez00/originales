@@ -4,25 +4,25 @@ import pandas as pd
 import tkinter as tk
 from tkinter import filedialog
 from bs4 import BeautifulSoup
-from sync_voice_over.json_queries import export
+from sync_voice_over.json_queries import dir_access, json_query, date_str, export
 
 
-labels = [
-    '              @',
-    '<yt-pdg-comment-chip-renderer',
-]
+date = date_str()
+
+json_file = dir_access('urls')
+labels = json_query(json_file)['youtube']
 
 # Seleccionamos el directorio
 root = tk.Tk()
 root.withdraw()
 file = filedialog.askopenfilename()
-output_file = os.path.join(os.path.dirname(file), 'output_.json')
+output_file = os.path.join(os.path.dirname(file), f'output_{date}.json')
+output_xlsx = os.path.join(os.path.dirname(file), f'output_{date}.xlsx')
 
 with open(file, 'r', encoding='utf-8') as f:
     html_tags = f.readlines()
 
 info = {}
-html_string = ''
 for label in labels:
     list_values = []
     for tag in html_tags:
@@ -39,10 +39,6 @@ output_content = json.dumps(info, indent=4)
 with open(output_file, 'w', encoding='utf-8') as f:
     f.writelines(output_content)
 
-output_xlsx = os.path.join(os.path.dirname(file), 'output.xlsx')
-df = pd.DataFrame.from_dict(info) #, orient='index')
-# df.columns = ["Texto"]
-# df.reset_index(inplace=True)
-# df.rename(columns={"index": "Usuario"}, inplace=True)
+df = pd.DataFrame.from_dict(info)
 print(df)
 export(df, output_xlsx)

@@ -1,14 +1,41 @@
-El código falla porque está intentando escribir una lista de objetos BeautifulSoup en un archivo de texto. Para escribirlas correctamente, deberías convertir cada objeto BeautifulSoup a una cadena antes de escribirlo en el archivo.
+Para obtener todas las coincidencias de una subcadena dentro de una cadena más grande en Python, puedes utilizar el método `findall()`. Este método devuelve una lista de todas las coincidencias de la subcadena en la cadena, manteniendo el orden en que aparecen.
 
-Aquí tienes el código corregido:
+**Sintaxis:**
+
+```
+cadena.findall(subcadena)
+```
+
+**Ejemplo:**
 
 ```python
-output_file = 'output.txt'
+cadena = "Hola mundo, hola Python"
+subcadena = "hola"
 
-soup = BeautifulSoup(html_tags, "lxml")
-values = soup.find_all('a')
+coincidencias = cadena.findall(subcadena)
+print(coincidencias)
+```
 
-with open(output_file, 'w', encoding='utf-8') as f:
-    for value in values:
-        f.write(str(value) + '\n')
+**Salida:**
+
+```
+['hola', 'hola']
+```
+
+El método `findall()` también acepta expresiones regulares como argumento. Esto te permite realizar coincidencias más complejas. Por ejemplo, para obtener todas las coincidencias de palabras que comiencen con "h" en la cadena, podrías usar la siguiente expresión regular:
+
+```python
+import re
+
+cadena = "Hola mundo, hola Python"
+subcadena = re.compile(r'\bh\w+')
+
+coincidencias = cadena.findall(subcadena)
+print(coincidencias)
+```
+
+**Salida:**
+
+```
+['Hola', 'hola']
 ```

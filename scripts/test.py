@@ -22,20 +22,32 @@ with open(file, 'r', encoding='utf-8') as f:
     html_tags = f.read()
 
 soup = BeautifulSoup(html_tags, "lxml")
-a_values = [value for value in soup.find_all('a') if labels[0] in str(value)]
-strong_values = [value for value in soup.find_all('strong') if labels[1] in str(value)]
-svg_values = [value for value in soup.find_all('path') if labels[3] in str(value)]
+
+a_values = []
+for value in soup.find_all('a'):
+    if (labels[0] in str(value)):
+        a_values.append(value)
+
+strong_values = []
+for value in soup.find_all('strong'):
+    if (labels[1] in str(value)):
+        strong_values.append(value)
+
+svg_values = []
+for value in soup.find_all('path'):
+    if (labels[2] in str(value)):
+        svg_values.append(value)
 
 titles  = [str(item['title']) + '\n' for item in a_values]
 hrefs   = [str(item['href']) + '\n' for item in a_values]
 views   = [item.text + '\n' for item in strong_values]
-audios  = [item.text + '\n' for item in svg_values]
+audios  = [str(item) + '\n' for item in svg_values]
 
 info = {}
 info['titles']  = titles
 info['hrefs']   = hrefs
 info['views']   = views
-# info['audios']  = audios
+info['audios']  = audios
 
 # Generamos los Reportes
 user = hrefs[0].split('/')[3]
@@ -48,7 +60,8 @@ output_json = os.path.join(os.path.dirname(file), f'{user}.json')
 output_xlsx = os.path.join(os.path.dirname(file), f'{user}.xlsx')
 
 with open(output_file, 'w', encoding='utf-8') as f:
-    for value in a_values:
+    # for value in a_values:
+    for value in svg_values:
         f.write(str(value) + '\n')
 
 output_content = json.dumps(info, indent=4)

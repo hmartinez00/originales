@@ -1,18 +1,39 @@
+Sí, hay algunas formas de ampliar la información que el request puede capturar para que `html_content` ofrezca más información:
+
+**1. Aumentar el tamaño del búfer de respuesta:**
+
 ```python
-import re
+response = requests.get(url, stream=True)
+response.raw.read(500000)  # Aumenta el tamaño del búfer a 500,000 bytes
+html_content = response.content
+```
 
-# Código HTML a procesar
-html = """
-<a class="css-1wrhn5c-AMetaCaptionLine eih2qak0" href="https://www.tiktok.com/@reposteras.magicas/video/7363832752564735238" tabindex="-1" title="Flores de buttercream fáciles ✨ #reposteria #pasteleria #reposteriaonline #pasteleriacreativa #pasteleras #reposteras #postres #reposterasdetiktok #postresfacilesyrapidos "><div class="css-2hkrzh-DivContainer ejg0rhn0" tabindex="-1"><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1">Flores de buttercream fáciles ✨</span><br tabindex="-1"/> <a aria-label="Watch more videos of the #reposteria category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/reposteria" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#reposteria </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #pasteleria category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/pasteleria" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#pasteleria </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #reposteriaonline category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/reposteriaonline" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#reposteriaonline </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #pasteleriacreativa category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/pasteleriacreativa" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#pasteleriacreativa </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #pasteleras category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/pasteleras" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#pasteleras </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #reposteras category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/reposteras" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#reposteras </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #postres category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/postres" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#postres </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #reposterasdetiktok category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/reposterasdetiktok" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#reposterasdetiktok </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #postresfacilesyrapidos category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/postresfacilesyrapidos" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#postresfacilesyrapidos </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span></div></a>
-"""
+**2. Usar la codificación correcta:**
 
-# Patrón para extraer los enlaces href
-patron = r'href="(.*?)"'
+Algunos sitios web pueden tener codificaciones de texto diferentes, como UTF-8 o ISO-8859-1. Intenta utilizar el parámetro `encoding` para especificar la codificación correcta:
 
-# Extracción de los enlaces
-enlaces = re.findall(patron, html)
+```python
+response = requests.get(url, encoding='utf-8')
+html_content = response.content
+```
 
-# Impresión de los enlaces
-for enlace in enlaces:
-    print(enlace)
+**3. Deshabilitar la compresión:**
+
+Algunos servidores pueden comprimir las respuestas para ahorrar ancho de banda. Intenta deshabilitar la compresión mediante el parámetro `allow_redirects`:
+
+```python
+response = requests.get(url, allow_redirects=False)
+html_content = response.content
+```
+
+**4. Usar un navegador sin cabeza:**
+
+Una alternativa es utilizar un navegador sin cabeza, como Selenium, para cargar la página web y capturar el HTML completo:
+
+```python
+from selenium import webdriver
+
+driver = webdriver.Chrome()
+driver.get(url)
+html_content = driver.page_source
 ```

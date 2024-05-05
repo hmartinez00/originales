@@ -6,7 +6,6 @@ import tkinter as tk
 from tkinter import filedialog
 from bs4 import BeautifulSoup
 from sync_voice_over.json_queries import dir_access, json_query, date_str, export
-from sync_voice_over.module_extractor import html_format, extract_html_values_tag
 
 
 # date = date_str()
@@ -36,12 +35,13 @@ for value in soup.find_all('strong'):
 
 titles  = [str(item['title']) + '\n' for item in a_values]
 views   = [item.text + '\n' for item in strong_values]
-hrefs, hashtags = [], []
+hrefs, hashtags, superhashtags = [], [], []
 for item in a_values:
     links = re.findall(r'href="(.*?)"', str(item))
     hrefs.append(links[0])
     if len(links) > 1:
         hashtags.append(links[1:])
+        superhashtags.extend(links[1:])
     else:
         hashtags.append('No tags')
 
@@ -58,13 +58,17 @@ for key in info.keys():
     print(f'{key}: {len(info[key])}')
 
 output_file = os.path.join(os.path.dirname(file), f'{user}.txt')
+supra_file  = os.path.join(os.path.dirname(file), f'{user}_hashtags.txt')
 output_json = os.path.join(os.path.dirname(file), f'{user}.json')
 output_xlsx = os.path.join(os.path.dirname(file), f'{user}.xlsx')
 
 with open(output_file, 'w', encoding='utf-8') as f:
     for value in a_values:
-    # for value in svg_values:
         f.write(str(value) + '\n')
+
+with open(supra_file, 'w', encoding='utf-8') as f:
+    for item in list(set(superhashtags)):
+        f.write(str(item) + '\n')
 
 output_content = json.dumps(info, indent=4)
 with open(output_json, 'w', encoding='utf-8') as f:

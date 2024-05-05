@@ -1,39 +1,37 @@
-Sí, hay algunas formas de ampliar la información que el request puede capturar para que `html_content` ofrezca más información:
+**Opción 1: Usando el método `set()`**
 
-**1. Aumentar el tamaño del búfer de respuesta:**
+El tipo de datos `set` en Python no permite duplicados. Puedes convertir tu lista en un conjunto y luego convertirlo de nuevo a una lista para eliminar los duplicados:
 
 ```python
-response = requests.get(url, stream=True)
-response.raw.read(500000)  # Aumenta el tamaño del búfer a 500,000 bytes
-html_content = response.content
+lista = [1, 2, 3, 4, 1, 2, 5]
+lista_sin_duplicados = list(set(lista))
 ```
 
-**2. Usar la codificación correcta:**
+**Opción 2: Usando un bucle y el método `index()`**
 
-Algunos sitios web pueden tener codificaciones de texto diferentes, como UTF-8 o ISO-8859-1. Intenta utilizar el parámetro `encoding` para especificar la codificación correcta:
+Puedes iterar sobre la lista y para cada elemento, usar el método `index()` para encontrar su primer índice de aparición. Si el índice del elemento es diferente del índice actual, significa que es un duplicado y se puede eliminar:
 
 ```python
-response = requests.get(url, encoding='utf-8')
-html_content = response.content
+lista = [1, 2, 3, 4, 1, 2, 5]
+
+i = 0
+while i < len(lista):
+    if lista[i] in lista[i+1:]:
+        lista.pop(i)
+    else:
+        i += 1
 ```
 
-**3. Deshabilitar la compresión:**
+**Opción 3: Usando un diccionario**
 
-Algunos servidores pueden comprimir las respuestas para ahorrar ancho de banda. Intenta deshabilitar la compresión mediante el parámetro `allow_redirects`:
-
-```python
-response = requests.get(url, allow_redirects=False)
-html_content = response.content
-```
-
-**4. Usar un navegador sin cabeza:**
-
-Una alternativa es utilizar un navegador sin cabeza, como Selenium, para cargar la página web y capturar el HTML completo:
+Puedes crear un diccionario donde las claves sean los elementos de la lista. Como los diccionarios no permiten claves duplicadas, esto eliminará automáticamente los duplicados:
 
 ```python
-from selenium import webdriver
+lista = [1, 2, 3, 4, 1, 2, 5]
 
-driver = webdriver.Chrome()
-driver.get(url)
-html_content = driver.page_source
+elementos_unicos = {}
+for elemento in lista:
+    elementos_unicos[elemento] = True
+
+lista_sin_duplicados = list(elementos_unicos.keys())
 ```

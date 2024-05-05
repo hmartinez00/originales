@@ -1,41 +1,18 @@
-Para obtener todas las coincidencias de una subcadena dentro de una cadena más grande en Python, puedes utilizar el método `findall()`. Este método devuelve una lista de todas las coincidencias de la subcadena en la cadena, manteniendo el orden en que aparecen.
-
-**Sintaxis:**
-
-```
-cadena.findall(subcadena)
-```
-
-**Ejemplo:**
-
-```python
-cadena = "Hola mundo, hola Python"
-subcadena = "hola"
-
-coincidencias = cadena.findall(subcadena)
-print(coincidencias)
-```
-
-**Salida:**
-
-```
-['hola', 'hola']
-```
-
-El método `findall()` también acepta expresiones regulares como argumento. Esto te permite realizar coincidencias más complejas. Por ejemplo, para obtener todas las coincidencias de palabras que comiencen con "h" en la cadena, podrías usar la siguiente expresión regular:
-
 ```python
 import re
 
-cadena = "Hola mundo, hola Python"
-subcadena = re.compile(r'\bh\w+')
+# Código HTML a procesar
+html = """
+<a class="css-1wrhn5c-AMetaCaptionLine eih2qak0" href="https://www.tiktok.com/@reposteras.magicas/video/7363832752564735238" tabindex="-1" title="Flores de buttercream fáciles ✨ #reposteria #pasteleria #reposteriaonline #pasteleriacreativa #pasteleras #reposteras #postres #reposterasdetiktok #postresfacilesyrapidos "><div class="css-2hkrzh-DivContainer ejg0rhn0" tabindex="-1"><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1">Flores de buttercream fáciles ✨</span><br tabindex="-1"/> <a aria-label="Watch more videos of the #reposteria category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/reposteria" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#reposteria </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #pasteleria category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/pasteleria" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#pasteleria </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #reposteriaonline category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/reposteriaonline" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#reposteriaonline </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #pasteleriacreativa category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/pasteleriacreativa" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#pasteleriacreativa </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #pasteleras category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/pasteleras" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#pasteleras </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #reposteras category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/reposteras" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#reposteras </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #postres category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/postres" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#postres </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #reposterasdetiktok category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/reposterasdetiktok" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#reposterasdetiktok </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span><a aria-label="Watch more videos of the #postresfacilesyrapidos category" class="ejg0rhn6 css-g8ml1x-StyledLink-StyledCommonLink er1vbsz0" data-e2e="search-common-link" href="https://www.tiktok.com/tag/postresfacilesyrapidos" rel="opener" tabindex="-1" target="_self"><strong class="css-1qkxi8e-StrongText ejg0rhn2" color="rgba(143, 190, 233, 1)" tabindex="-1">#postresfacilesyrapidos </strong></a><span class="css-j2a19r-SpanText efbd9f0" tabindex="-1"> </span></div></a>
+"""
 
-coincidencias = cadena.findall(subcadena)
-print(coincidencias)
-```
+# Patrón para extraer los enlaces href
+patron = r'href="(.*?)"'
 
-**Salida:**
+# Extracción de los enlaces
+enlaces = re.findall(patron, html)
 
-```
-['Hola', 'hola']
+# Impresión de los enlaces
+for enlace in enlaces:
+    print(enlace)
 ```

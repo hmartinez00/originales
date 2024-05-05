@@ -1,5 +1,4 @@
 import os
-import re
 import json
 import pandas as pd
 import tkinter as tk
@@ -34,23 +33,14 @@ for value in soup.find_all('strong'):
     if (labels[1] in str(value)):
         strong_values.append(value)
 
-titles      = [str(item['title']) + '\n' for item in a_values]
-hrefs       = [str(item['href']) + '\n' for item in a_values]
-views       = [item.text + '\n' for item in strong_values]
-hashtags    = []
-for item in a_values:
-    links = re.findall(r'href="(.*?)"', str(item))
-    hrefs.append(links[0])
-    if len(links) > 1:
-        hashtags.append(links[1:])
-    else:
-        hashtags.append('No tags')
+titles  = [str(item['title']) + '\n' for item in a_values]
+hrefs   = [str(item['href']) + '\n' for item in a_values]
+views   = [item.text + '\n' for item in strong_values]
 
 info = {}
-info['titles']      = titles
-info['hrefs']       = hrefs
-info['views']       = views
-info['hashtags']    = hashtags
+info['titles']  = titles
+info['hrefs']   = hrefs
+info['views']   = views
 
 # Generamos los Reportes
 user = hrefs[0].split('/')[3]

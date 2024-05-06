@@ -48,4 +48,3 @@ with open(output_file, 'w', encoding='utf-8') as f:
 df = pd.DataFrame.from_dict(info)
 print(df)
 export(df, output_xlsx)
-

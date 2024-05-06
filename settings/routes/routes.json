@@ -26,7 +26,8 @@
             "Agregar nuevo script",
             "Ejecutar prueba",
             "Inspeccionar html youtube",
-            "Inspeccionar html tiktok"
+            "Inspeccionar html tiktok",
+            "Tendencias"
         ],
         [
             "scripts/git_update.py",
@@ -49,7 +50,8 @@
             "scripts/add_script.py",
             "scripts\\test.py",
             "scripts\\webscraper.py",
-            "scripts\\webscraper_tiktok.py"
+            "scripts\\webscraper_tiktok.py",
+            "scripts\\trends.py"
         ]
     ]
 }

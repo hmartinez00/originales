@@ -1,2 +1,254 @@
-<!DOCTYPE html>
- <html lang="en"> <head> <link href="data:;base64,=" rel="icon"/> <script id="slardar-config" type="application/json"> {     "slardarClient": "SlardarWAF",     "sdkUrl": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/browser.sg.js",     "bid": "slardar_us_waf",     "pid": "pid",     "pluginPathPrefix": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/fe/sdk-web/plugins" } </script> <script crossorigin="anonymous" src="https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/slardar/sdk-pre/browser.web.pre.js"></script> </head> <body> Please wait... <p class="_wafchallengeid" id="wci"></p> <p class="eyJ2Ijp7ImEiOiJYR1ZQSllTYjkwYStHK1pJMVkwSExCSTFEekpPRFZjZ0FCUmtpSDY0UHJRPSIsImIiOjE3MTQ4NzY5MjcsImMiOiJFaTVHZU5RMkl2T2NSVHA1MmNwYjVKeGxKNFM1eUhYZkxTeXl3WVhyVFJZPSJ9LCJzIjoiTmROUTNQWVQ4MUZJaTlvRlY3L1F1RWxNc1lmZFNOMFlKL1gwTEtpcklCRT0ifQ" id="cs"></p> <script src="https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/obj/waf-aiso/dd9799.js" tpye="text/javascript"></script> </body> </html>
+<span>Top Ads Dashboard</span>
+<span>Top Ads Spotlight</span>
+<span>Keyword Insights</span>
+<span>Creative Insights</span>
+<span>Top Products</span>
+<span>Hashtags</span>
+<span>Songs</span>
+<span>Creators</span>
+<span>TikTok Videos</span>
+<span>About TikTok Trends</span>
+<span>Trend Perspectives</span>
+<span>Tools Overview</span>
+<span>Video Editor</span>
+<span>Video Templates</span>
+<span>Interactive Add-on</span>
+<span>Script Generator</span>
+<span>Commercial Music Library</span>
+<span>Creative Tips Finder</span>
+<span>Creative Strategies</span>
+<span>Creative Expert Courses</span>
+<span class="byted-select byted-select-size-md byted-select-single byted-can-input-grouped CcRimlessSelect_ccRimSelector__m4xdd index-mobile_ccRimSelector__S2lLr FixedHeaderPc_headerLangSelector__ZB6jf" data-testid="cc_rimless_select_language" style="width:auto"></span>
+<span class="TrendBanner_bannerRegionsSelectLabel__ZtCv1 index-mobile_bannerRegionsSelectLabel__DBBS_ TrendBanner_fixedLocation__maOYH">All regions</span>
+<span class="SubMenu_mainText__GfBui index-mobile_mainText___T90d">Hashtags</span>
+<span class="SubMenu_subText__Gx8MM">Discover new trends on TikTok through hashtags</span>
+<span class="SubMenu_mainText__GfBui index-mobile_mainText___T90d">Songs</span>
+<span class="SubMenu_subText__Gx8MM">Get inspired through songs trending on TikTok</span>
+<span class="SubMenu_mainText__GfBui index-mobile_mainText___T90d">Creators</span>
+<span class="SubMenu_subText__Gx8MM">Connect with the hottest creators on TikTok</span>
+<span class="SubMenu_mainText__GfBui index-mobile_mainText___T90d">TikTok Videos</span>
+<span class="SubMenu_subText__Gx8MM">Find inspiration through trending TikTok videos</span>
+<span class="byted-select byted-select-size-md byted-select-single byted-can-input-grouped CcSelect_ccSelector__JHTnF index-mobile_ccSelector__2AqFo ListFilter_industrySelect__mtwns index-mobile_industrySelect__HZrsZ" data-testid="cc_single_select_undefined" id="hashtagIndustrySelect" style="min-width:200px;width:auto"><span class="byted-popper-trigger byted-popper-trigger-click byted-select-input"><div class="byted-input-wrapper byted-input-wrapper-size-md byted-select-render-selected byted-select-render-selected-unset-height"><div class="byted-input-inner__wrapper byted-input-inner__wrapper-border byted-input-inner__wrapper-size-md byted-input-inner__wrapper-add-suffix placeholder"><div class="CcSelect_ccSelectPlcWrap__piL7j index-mobile_ccSelectPlcWrap__6oZN1" style="justify-content:space-between"><span class="CcSelect_ccSelectPlcLabel__ytBmy index-mobile_ccSelectPlcLabel__4NN1r">Industry</span><span class="i-icon i-icon-down CcSelect_ccSelectPlcIcon__TUyOL index-mobile_ccSelectPlcIcon__PwN_u"><svg fill="none" height="20" viewbox="0 0 48 48" width="20"><path d="M36 18L24 30L12 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path></svg></span></div><span class="byted-input-suffix"><span class="byted-icon byted-icon-down byted-select-arrow"><svg height="1em" viewbox="0 0 48 48" width="1em" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="4"><g><polyline points="19 12 31 24 19 36" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="translate(25.000000, 24.000000) rotate(90.000000) translate(-25.000000, -24.000000)"></polyline></g></g></svg></span></span></div></div></span></span>
+<span class="byted-popper-trigger byted-popper-trigger-click byted-select-input"><div class="byted-input-wrapper byted-input-wrapper-size-md byted-select-render-selected byted-select-render-selected-unset-height"><div class="byted-input-inner__wrapper byted-input-inner__wrapper-border byted-input-inner__wrapper-size-md byted-input-inner__wrapper-add-suffix placeholder"><div class="CcSelect_ccSelectPlcWrap__piL7j index-mobile_ccSelectPlcWrap__6oZN1" style="justify-content:space-between"><span class="CcSelect_ccSelectPlcLabel__ytBmy index-mobile_ccSelectPlcLabel__4NN1r">Industry</span><span class="i-icon i-icon-down CcSelect_ccSelectPlcIcon__TUyOL index-mobile_ccSelectPlcIcon__PwN_u"><svg fill="none" height="20" viewbox="0 0 48 48" width="20"><path d="M36 18L24 30L12 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path></svg></span></div><span class="byted-input-suffix"><span class="byted-icon byted-icon-down byted-select-arrow"><svg height="1em" viewbox="0 0 48 48" width="1em" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="4"><g><polyline points="19 12 31 24 19 36" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="translate(25.000000, 24.000000) rotate(90.000000) translate(-25.000000, -24.000000)"></polyline></g></g></svg></span></span></div></div></span>
+<span class="CcSelect_ccSelectPlcLabel__ytBmy index-mobile_ccSelectPlcLabel__4NN1r">Industry</span>
+<span class="i-icon i-icon-down CcSelect_ccSelectPlcIcon__TUyOL index-mobile_ccSelectPlcIcon__PwN_u"><svg fill="none" height="20" viewbox="0 0 48 48" width="20"><path d="M36 18L24 30L12 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path></svg></span>
+<span class="byted-input-suffix"><span class="byted-icon byted-icon-down byted-select-arrow"><svg height="1em" viewbox="0 0 48 48" width="1em" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="4"><g><polyline points="19 12 31 24 19 36" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="translate(25.000000, 24.000000) rotate(90.000000) translate(-25.000000, -24.000000)"></polyline></g></g></svg></span></span>
+<span class="byted-icon byted-icon-down byted-select-arrow"><svg height="1em" viewbox="0 0 48 48" width="1em" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="4"><g><polyline points="19 12 31 24 19 36" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="translate(25.000000, 24.000000) rotate(90.000000) translate(-25.000000, -24.000000)"></polyline></g></g></svg></span>
+<span class="byted-select byted-select-size-md byted-select-single byted-can-input-grouped CcSelect_ccSelector__JHTnF index-mobile_ccSelector__2AqFo index-mobile_soundPeriodSelect__gqs_6" data-testid="cc_single_select_undefined" id="hashtagPeriodSelect" style="min-width:200px;width:auto"><span class="byted-popper-trigger byted-popper-trigger-click byted-select-input"><div class="byted-input-wrapper byted-input-wrapper-size-md byted-select-render-selected byted-select-render-selected-unset-height"><div class="byted-input-inner__wrapper byted-input-inner__wrapper-border byted-input-inner__wrapper-size-md byted-input-inner__wrapper-add-suffix placeholder"><div class="CcSelect_ccSelectPlcWrap__piL7j index-mobile_ccSelectPlcWrap__6oZN1" style="justify-content:space-between"><span class="CcSelect_ccSelectPlcLabel__ytBmy index-mobile_ccSelectPlcLabel__4NN1r">Please select</span><span class="i-icon i-icon-down CcSelect_ccSelectPlcIcon__TUyOL index-mobile_ccSelectPlcIcon__PwN_u"><svg fill="none" height="20" viewbox="0 0 48 48" width="20"><path d="M36 18L24 30L12 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path></svg></span></div><span class="byted-input-suffix"><span class="byted-icon byted-icon-down byted-select-arrow"><svg height="1em" viewbox="0 0 48 48" width="1em" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="4"><g><polyline points="19 12 31 24 19 36" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="translate(25.000000, 24.000000) rotate(90.000000) translate(-25.000000, -24.000000)"></polyline></g></g></svg></span></span></div></div></span></span>
+<span class="byted-popper-trigger byted-popper-trigger-click byted-select-input"><div class="byted-input-wrapper byted-input-wrapper-size-md byted-select-render-selected byted-select-render-selected-unset-height"><div class="byted-input-inner__wrapper byted-input-inner__wrapper-border byted-input-inner__wrapper-size-md byted-input-inner__wrapper-add-suffix placeholder"><div class="CcSelect_ccSelectPlcWrap__piL7j index-mobile_ccSelectPlcWrap__6oZN1" style="justify-content:space-between"><span class="CcSelect_ccSelectPlcLabel__ytBmy index-mobile_ccSelectPlcLabel__4NN1r">Please select</span><span class="i-icon i-icon-down CcSelect_ccSelectPlcIcon__TUyOL index-mobile_ccSelectPlcIcon__PwN_u"><svg fill="none" height="20" viewbox="0 0 48 48" width="20"><path d="M36 18L24 30L12 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path></svg></span></div><span class="byted-input-suffix"><span class="byted-icon byted-icon-down byted-select-arrow"><svg height="1em" viewbox="0 0 48 48" width="1em" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="4"><g><polyline points="19 12 31 24 19 36" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="translate(25.000000, 24.000000) rotate(90.000000) translate(-25.000000, -24.000000)"></polyline></g></g></svg></span></span></div></div></span>
+<span class="CcSelect_ccSelectPlcLabel__ytBmy index-mobile_ccSelectPlcLabel__4NN1r">Please select</span>
+<span class="i-icon i-icon-down CcSelect_ccSelectPlcIcon__TUyOL index-mobile_ccSelectPlcIcon__PwN_u"><svg fill="none" height="20" viewbox="0 0 48 48" width="20"><path d="M36 18L24 30L12 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path></svg></span>
+<span class="byted-input-suffix"><span class="byted-icon byted-icon-down byted-select-arrow"><svg height="1em" viewbox="0 0 48 48" width="1em" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="4"><g><polyline points="19 12 31 24 19 36" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="translate(25.000000, 24.000000) rotate(90.000000) translate(-25.000000, -24.000000)"></polyline></g></g></svg></span></span>
+<span class="byted-icon byted-icon-down byted-select-arrow"><svg height="1em" viewbox="0 0 48 48" width="1em" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="none" stroke-width="4"><g><polyline points="19 12 31 24 19 36" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" transform="translate(25.000000, 24.000000) rotate(90.000000) translate(-25.000000, -24.000000)"></polyline></g></g></svg></span>
+<span class="byted-checkbox-icon"></span>
+<span class="byted-checkbox-label"><span class="CcSingleCheckBox_boxLabel__Tfm3R index-mobile_boxLabel__q0XLH">New to top 100</span></span>
+<span class="CcSingleCheckBox_boxLabel__Tfm3R index-mobile_boxLabel__q0XLH">New to top 100</span>
+<span class="byted-auto-complete-main-trigger"><div class="byted-select-input-wrapper-box"><div class="byted-select-input-wrapper byted-select-input-wrapper-size-md byted-select-input-wrapper-append"><div class="byted-select-input byted-input-inner__wrapper" tabindex="0"></div><div class="byted-select-input-content-wrapper"><div class="byted-select-input-inner byted-select-input-inner-simple byted-select-input-inner-single"><input class="byted-select-value" placeholder="Search by hashtag" value=""/></div></div><span class="byted-select-input-icon"></span></div><span class="byted-select-input-append"><div class="CcAutoCompleteInput_completeAppendWrap__RBHIM index-mobile_completeAppendWrap__ClB8U"><span class="CcAutoCompleteInput_completeAppendLabel__E1AFd" data-testid="cc_commonCom_autoComplete_seach" role="button" tabindex="0">Search</span></div></span></div></span>
+<span class="byted-select-input-icon"></span>
+<span class="byted-select-input-append"><div class="CcAutoCompleteInput_completeAppendWrap__RBHIM index-mobile_completeAppendWrap__ClB8U"><span class="CcAutoCompleteInput_completeAppendLabel__E1AFd" data-testid="cc_commonCom_autoComplete_seach" role="button" tabindex="0">Search</span></div></span>
+<span class="CcAutoCompleteInput_completeAppendLabel__E1AFd" data-testid="cc_commonCom_autoComplete_seach" role="button" tabindex="0">Search</span>
+<span class="HashtagList_hashtagListColumnRank__D49rM">Rank</span>
+<span class="HashtagList_hashtagListColumnLeft__Xh91A">Hashtags</span>
+<span class="HashtagList_hashtagListColumnPav__MvYe4">Posts &amp; Views</span>
+<span class="HashtagList_hashtagListColumnRight__DaF0r">Trend</span>
+<span class="HashtagList_hashtagListColumnCenter__GfgIM">Creators</span>
+<span class="HashtagList_hashtagListColumnBtn__tzN5C">Actions</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">1</span>
+<span class="i-icon i-icon-arrow-up"><svg fill="none" height="16" viewbox="0 0 48 48" width="16"><path d="M24 6V42" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path d="M12 18L24 6L36 18" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path></svg></span>
+<span class="RankingStatus_rankingvalueNum__d_m_a index-mobile_rankingvalueNum__U8Jaj">65</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->holamayo</span>
+<span class="CardPc_itemValue__XGDmG">60K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">41M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">2</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->diadelasmadres</span>
+<span class="CardPc_itemValue__XGDmG">147K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">425M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">3</span>
+<span class="i-icon i-icon-arrow-up"><svg fill="none" height="16" viewbox="0 0 48 48" width="16"><path d="M24 6V42" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path d="M12 18L24 6L36 18" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path></svg></span>
+<span class="RankingStatus_rankingvalueNum__d_m_a index-mobile_rankingvalueNum__U8Jaj">17</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->micalendario</span>
+<span class="CardPc_itemValue__XGDmG">46K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">26M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">4</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->capgaleria</span>
+<span class="CardPc_itemValue__XGDmG">38K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">48M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">5</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->mejordime</span>
+<span class="CardPc_itemValue__XGDmG">33K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">34M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">6</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->asokachallenge</span>
+<span class="CardPc_itemValue__XGDmG">16K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">229M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">7</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->пасха</span>
+<span class="i-icon i-icon-tag-one" style="margin-right:4px"><svg fill="none" height="14" viewbox="0 0 48 48" width="14"><path d="M42.1691 29.2451L29.2631 42.1511C28.5879 42.8271 27.6716 43.2069 26.7161 43.2069C25.7606 43.2069 24.8444 42.8271 24.1691 42.1511L8 26V8H26L42.1691 24.1691C43.5649 25.5732 43.5649 27.841 42.1691 29.2451Z" fill="none" stroke="#8a8a8a" stroke-linejoin="bevel" stroke-width="4"></path><path clip-rule="evenodd" d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" fill="#8a8a8a" fill-rule="evenodd"></path></svg></span>
+<span>Food &amp; Beverage</span>
+<span class="CardPc_itemValue__XGDmG">40K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">485M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">8</span>
+<span class="i-icon i-icon-arrow-up"><svg fill="none" height="16" viewbox="0 0 48 48" width="16"><path d="M24 6V42" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path d="M12 18L24 6L36 18" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path></svg></span>
+<span class="RankingStatus_rankingvalueNum__d_m_a index-mobile_rankingvalueNum__U8Jaj">15</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->johnnycash</span>
+<span class="i-icon i-icon-tag-one" style="margin-right:4px"><svg fill="none" height="14" viewbox="0 0 48 48" width="14"><path d="M42.1691 29.2451L29.2631 42.1511C28.5879 42.8271 27.6716 43.2069 26.7161 43.2069C25.7606 43.2069 24.8444 42.8271 24.1691 42.1511L8 26V8H26L42.1691 24.1691C43.5649 25.5732 43.5649 27.841 42.1691 29.2451Z" fill="none" stroke="#8a8a8a" stroke-linejoin="bevel" stroke-width="4"></path><path clip-rule="evenodd" d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" fill="#8a8a8a" fill-rule="evenodd"></path></svg></span>
+<span>Pets</span>
+<span class="CardPc_itemValue__XGDmG">21K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">211M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">9</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->tiktokshopmothersday</span>
+<span class="i-icon i-icon-tag-one" style="margin-right:4px"><svg fill="none" height="14" viewbox="0 0 48 48" width="14"><path d="M42.1691 29.2451L29.2631 42.1511C28.5879 42.8271 27.6716 43.2069 26.7161 43.2069C25.7606 43.2069 24.8444 42.8271 24.1691 42.1511L8 26V8H26L42.1691 24.1691C43.5649 25.5732 43.5649 27.841 42.1691 29.2451Z" fill="none" stroke="#8a8a8a" stroke-linejoin="bevel" stroke-width="4"></path><path clip-rule="evenodd" d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" fill="#8a8a8a" fill-rule="evenodd"></path></svg></span>
+<span>Apparel &amp; Accessories</span>
+<span class="CardPc_itemValue__XGDmG">39K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">232M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">10</span>
+<span class="i-icon i-icon-arrow-up"><svg fill="none" height="16" viewbox="0 0 48 48" width="16"><path d="M24 6V42" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path d="M12 18L24 6L36 18" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path></svg></span>
+<span class="RankingStatus_rankingvalueNum__d_m_a index-mobile_rankingvalueNum__U8Jaj">43</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->canelo</span>
+<span class="i-icon i-icon-tag-one" style="margin-right:4px"><svg fill="none" height="14" viewbox="0 0 48 48" width="14"><path d="M42.1691 29.2451L29.2631 42.1511C28.5879 42.8271 27.6716 43.2069 26.7161 43.2069C25.7606 43.2069 24.8444 42.8271 24.1691 42.1511L8 26V8H26L42.1691 24.1691C43.5649 25.5732 43.5649 27.841 42.1691 29.2451Z" fill="none" stroke="#8a8a8a" stroke-linejoin="bevel" stroke-width="4"></path><path clip-rule="evenodd" d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" fill="#8a8a8a" fill-rule="evenodd"></path></svg></span>
+<span>Sports &amp; Outdoor</span>
+<span class="CardPc_itemValue__XGDmG">10K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">468M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">11</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->sancho</span>
+<span class="i-icon i-icon-tag-one" style="margin-right:4px"><svg fill="none" height="14" viewbox="0 0 48 48" width="14"><path d="M42.1691 29.2451L29.2631 42.1511C28.5879 42.8271 27.6716 43.2069 26.7161 43.2069C25.7606 43.2069 24.8444 42.8271 24.1691 42.1511L8 26V8H26L42.1691 24.1691C43.5649 25.5732 43.5649 27.841 42.1691 29.2451Z" fill="none" stroke="#8a8a8a" stroke-linejoin="bevel" stroke-width="4"></path><path clip-rule="evenodd" d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" fill="#8a8a8a" fill-rule="evenodd"></path></svg></span>
+<span>Sports &amp; Outdoor</span>
+<span class="CardPc_itemValue__XGDmG">6K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">107M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">12</span>
+<span class="i-icon i-icon-arrow-up"><svg fill="none" height="16" viewbox="0 0 48 48" width="16"><path d="M24 6V42" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path d="M12 18L24 6L36 18" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path></svg></span>
+<span class="RankingStatus_rankingvalueNum__d_m_a index-mobile_rankingvalueNum__U8Jaj">32</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->cincodemayo</span>
+<span class="i-icon i-icon-tag-one" style="margin-right:4px"><svg fill="none" height="14" viewbox="0 0 48 48" width="14"><path d="M42.1691 29.2451L29.2631 42.1511C28.5879 42.8271 27.6716 43.2069 26.7161 43.2069C25.7606 43.2069 24.8444 42.8271 24.1691 42.1511L8 26V8H26L42.1691 24.1691C43.5649 25.5732 43.5649 27.841 42.1691 29.2451Z" fill="none" stroke="#8a8a8a" stroke-linejoin="bevel" stroke-width="4"></path><path clip-rule="evenodd" d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" fill="#8a8a8a" fill-rule="evenodd"></path></svg></span>
+<span>Food &amp; Beverage</span>
+<span class="CardPc_itemValue__XGDmG">14K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">133M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">13</span>
+<span class="i-icon i-icon-arrow-up"><svg fill="none" height="16" viewbox="0 0 48 48" width="16"><path d="M24 6V42" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path d="M12 18L24 6L36 18" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path></svg></span>
+<span class="RankingStatus_rankingvalueNum__d_m_a index-mobile_rankingvalueNum__U8Jaj">24</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->fnf</span>
+<span class="i-icon i-icon-tag-one" style="margin-right:4px"><svg fill="none" height="14" viewbox="0 0 48 48" width="14"><path d="M42.1691 29.2451L29.2631 42.1511C28.5879 42.8271 27.6716 43.2069 26.7161 43.2069C25.7606 43.2069 24.8444 42.8271 24.1691 42.1511L8 26V8H26L42.1691 24.1691C43.5649 25.5732 43.5649 27.841 42.1691 29.2451Z" fill="none" stroke="#8a8a8a" stroke-linejoin="bevel" stroke-width="4"></path><path clip-rule="evenodd" d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" fill="#8a8a8a" fill-rule="evenodd"></path></svg></span>
+<span>Games</span>
+<span class="CardPc_itemValue__XGDmG">11K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">178M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">14</span>
+<span class="i-icon i-icon-arrow-up"><svg fill="none" height="16" viewbox="0 0 48 48" width="16"><path d="M24 6V42" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path d="M12 18L24 6L36 18" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path></svg></span>
+<span class="RankingStatus_rankingvalueNum__d_m_a index-mobile_rankingvalueNum__U8Jaj">75</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->caneloalvarez</span>
+<span class="i-icon i-icon-tag-one" style="margin-right:4px"><svg fill="none" height="14" viewbox="0 0 48 48" width="14"><path d="M42.1691 29.2451L29.2631 42.1511C28.5879 42.8271 27.6716 43.2069 26.7161 43.2069C25.7606 43.2069 24.8444 42.8271 24.1691 42.1511L8 26V8H26L42.1691 24.1691C43.5649 25.5732 43.5649 27.841 42.1691 29.2451Z" fill="none" stroke="#8a8a8a" stroke-linejoin="bevel" stroke-width="4"></path><path clip-rule="evenodd" d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" fill="#8a8a8a" fill-rule="evenodd"></path></svg></span>
+<span>Sports &amp; Outdoor</span>
+<span class="CardPc_itemValue__XGDmG">6K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">336M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">15</span>
+<span class="i-icon i-icon-arrow-up"><svg fill="none" height="16" viewbox="0 0 48 48" width="16"><path d="M24 6V42" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path d="M12 18L24 6L36 18" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path></svg></span>
+<span class="RankingStatus_rankingvalueNum__d_m_a index-mobile_rankingvalueNum__U8Jaj">56</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->promoguncang55</span>
+<span class="i-icon i-icon-tag-one" style="margin-right:4px"><svg fill="none" height="14" viewbox="0 0 48 48" width="14"><path d="M42.1691 29.2451L29.2631 42.1511C28.5879 42.8271 27.6716 43.2069 26.7161 43.2069C25.7606 43.2069 24.8444 42.8271 24.1691 42.1511L8 26V8H26L42.1691 24.1691C43.5649 25.5732 43.5649 27.841 42.1691 29.2451Z" fill="none" stroke="#8a8a8a" stroke-linejoin="bevel" stroke-width="4"></path><path clip-rule="evenodd" d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" fill="#8a8a8a" fill-rule="evenodd"></path></svg></span>
+<span>Apparel &amp; Accessories</span>
+<span class="CardPc_itemValue__XGDmG">183K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">182M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">16</span>
+<span class="i-icon i-icon-arrow-up"><svg fill="none" height="16" viewbox="0 0 48 48" width="16"><path d="M24 6V42" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path d="M12 18L24 6L36 18" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path></svg></span>
+<span class="RankingStatus_rankingvalueNum__d_m_a index-mobile_rankingvalueNum__U8Jaj">45</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->stickemup</span>
+<span class="i-icon i-icon-tag-one" style="margin-right:4px"><svg fill="none" height="14" viewbox="0 0 48 48" width="14"><path d="M42.1691 29.2451L29.2631 42.1511C28.5879 42.8271 27.6716 43.2069 26.7161 43.2069C25.7606 43.2069 24.8444 42.8271 24.1691 42.1511L8 26V8H26L42.1691 24.1691C43.5649 25.5732 43.5649 27.841 42.1691 29.2451Z" fill="none" stroke="#8a8a8a" stroke-linejoin="bevel" stroke-width="4"></path><path clip-rule="evenodd" d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" fill="#8a8a8a" fill-rule="evenodd"></path></svg></span>
+<span>Pets</span>
+<span class="CardPc_itemValue__XGDmG">8K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">73M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">17</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->oscardelahoya</span>
+<span class="i-icon i-icon-tag-one" style="margin-right:4px"><svg fill="none" height="14" viewbox="0 0 48 48" width="14"><path d="M42.1691 29.2451L29.2631 42.1511C28.5879 42.8271 27.6716 43.2069 26.7161 43.2069C25.7606 43.2069 24.8444 42.8271 24.1691 42.1511L8 26V8H26L42.1691 24.1691C43.5649 25.5732 43.5649 27.841 42.1691 29.2451Z" fill="none" stroke="#8a8a8a" stroke-linejoin="bevel" stroke-width="4"></path><path clip-rule="evenodd" d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" fill="#8a8a8a" fill-rule="evenodd"></path></svg></span>
+<span>Sports &amp; Outdoor</span>
+<span class="CardPc_itemValue__XGDmG">2K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">158M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">18</span>
+<span class="i-icon i-icon-arrow-up"><svg fill="none" height="16" viewbox="0 0 48 48" width="16"><path d="M24 6V42" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path d="M12 18L24 6L36 18" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path></svg></span>
+<span class="RankingStatus_rankingvalueNum__d_m_a index-mobile_rankingvalueNum__U8Jaj">31</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->milliondollarbaby</span>
+<span class="i-icon i-icon-tag-one" style="margin-right:4px"><svg fill="none" height="14" viewbox="0 0 48 48" width="14"><path d="M42.1691 29.2451L29.2631 42.1511C28.5879 42.8271 27.6716 43.2069 26.7161 43.2069C25.7606 43.2069 24.8444 42.8271 24.1691 42.1511L8 26V8H26L42.1691 24.1691C43.5649 25.5732 43.5649 27.841 42.1691 29.2451Z" fill="none" stroke="#8a8a8a" stroke-linejoin="bevel" stroke-width="4"></path><path clip-rule="evenodd" d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" fill="#8a8a8a" fill-rule="evenodd"></path></svg></span>
+<span>News &amp; Entertainment</span>
+<span class="CardPc_itemValue__XGDmG">9K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">107M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="byted-popper-trigger byted-popper-trigger-hover byted-tooltip" style="width:48px"><div class="ImageItem_imageItem__GVz_6" style="background-image:url(https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/f5f43c3a8de719ebbf6d634ad73751b8.png?lk3s=a5d48078&amp;x-expires=1715191200&amp;x-signature=xY4LxOO3ZBa0jm%2FmrKvHtpnCObY%3D);width:48px;height:48px;background-size:cover;background-repeat:no-repeat;background-origin:content-box;border-color:#fff"></div></span>
+<span class="byted-popper-trigger byted-popper-trigger-hover byted-tooltip" style="width:48px"><div class="ImageItem_imageItem__GVz_6" style="background-image:url(https://p77-sign-va.tiktokcdn.com/tos-maliva-avt-0068/a624e36dc7a62dea8539ad1455c496ab~c5_100x100.png?lk3s=a5d48078&amp;x-expires=1715191200&amp;x-signature=Tc5x7ThkdSh%2FkTWr6OGzMWsZAAk%3D);width:48px;height:48px;background-size:cover;background-repeat:no-repeat;background-origin:content-box;border-color:#fff"></div></span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">19</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->10demayo</span>
+<span class="CardPc_itemValue__XGDmG">10K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">90M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="RankingStatus_rankingIndex__ZMDrH index-mobile_rankingIndex__9mXja">20</span>
+<span class="i-icon i-icon-arrow-up"><svg fill="none" height="16" viewbox="0 0 48 48" width="16"><path d="M24 6V42" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path><path d="M12 18L24 6L36 18" stroke="#5CA537" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"></path></svg></span>
+<span class="RankingStatus_rankingvalueNum__d_m_a index-mobile_rankingvalueNum__U8Jaj">37</span>
+<span class="CardPc_titleText__RYOWo"># <!-- -->ucla</span>
+<span class="i-icon i-icon-tag-one" style="margin-right:4px"><svg fill="none" height="14" viewbox="0 0 48 48" width="14"><path d="M42.1691 29.2451L29.2631 42.1511C28.5879 42.8271 27.6716 43.2069 26.7161 43.2069C25.7606 43.2069 24.8444 42.8271 24.1691 42.1511L8 26V8H26L42.1691 24.1691C43.5649 25.5732 43.5649 27.841 42.1691 29.2451Z" fill="none" stroke="#8a8a8a" stroke-linejoin="bevel" stroke-width="4"></path><path clip-rule="evenodd" d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z" fill="#8a8a8a" fill-rule="evenodd"></path></svg></span>
+<span>Sports &amp; Outdoor</span>
+<span class="CardPc_itemValue__XGDmG">6K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">72M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+<span class="GoDetailBtn_text__UNL0i index-mobile_text__91CWi">See analytics</span>
+<span class="i-icon i-icon-arrow-right InduceLogin_arrCls__ZK5EI"><svg fill="none" height="1em" viewbox="0 0 48 48" width="1em"><path d="M41.9999 24H5.99994" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path><path d="M30 12L42 24L30 36" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path></svg></span>
+<span class="FooterLinksPc_title__7TVuG" data-testid="cc_footer_outerAhref_label">About us</span>
+<span class="FooterLinksPc_title__7TVuG" data-testid="cc_footer_outerAhref_label">Features</span>
+<span class="FooterLinksPc_title__7TVuG" data-testid="cc_footer_outerAhref_label">Products &amp; Services</span>
+<span class="FooterLinksPc_title__7TVuG" data-testid="cc_footer_outerAhref_label">TikTok for Business</span>
+<span class="FooterLinksPc_title__7TVuG" data-testid="cc_footer_outerAhref_label">Initiatives</span>
+<span class="FooterTerms_link__OsNZS index-mobile_link__UIfKe FooterTerms_text__s_uLi index-mobile_text__9Yrwc">© 2023 TikTok For Business</span>
+<span class="i-icon i-icon-share-one RightSlideBar_sicon__oUhYT"><svg fill="none" height="24" viewbox="0 0 48 48" width="24"><path d="M35 16C37.7614 16 40 13.7614 40 11C40 8.23858 37.7614 6 35 6C32.2386 6 30 8.23858 30 11C30 13.7614 32.2386 16 35 16Z" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"></path><path d="M13 29C15.7614 29 18 26.7614 18 24C18 21.2386 15.7614 19 13 19C10.2386 19 8 21.2386 8 24C8 26.7614 10.2386 29 13 29Z" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"></path><path d="M30.0004 13.5745L17.3393 21.2454" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path><path d="M17.3385 26.5639L30.6789 34.4469" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path><path d="M35 32C37.7614 32 40 34.2386 40 37C40 39.7614 37.7614 42 35 42C32.2386 42 30 39.7614 30 37C30 34.2386 32.2386 32 35 32Z" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"></path></svg></span>
+<span class="byted-popper-trigger byted-popper-trigger-focus byted-tooltip"><svg fill="none" height="32" viewbox="0 0 32 32" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M27.5 9.75C27.5 7.67893 25.8211 6 23.75 6H8.75C6.67893 6 5 7.67893 5 9.75V19.125C5 21.1961 6.67893 22.875 8.75 22.875H10.0625L12.0312 26.25L14.6101 23.8695C15.3028 23.2301 16.211 22.875 17.1537 22.875H23.75C25.8211 22.875 27.5 21.1961 27.5 19.125V9.75Z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path><path d="M10.625 13.5938V15.2813" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path><path d="M16.25 13.5938V15.2813" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path><path d="M21.875 13.5938V15.2813" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg></span>

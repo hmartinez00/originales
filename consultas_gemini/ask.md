@@ -1,37 +1,24 @@
-**Opción 1: Usando el método `set()`**
-
-El tipo de datos `set` en Python no permite duplicados. Puedes convertir tu lista en un conjunto y luego convertirlo de nuevo a una lista para eliminar los duplicados:
-
 ```python
-lista = [1, 2, 3, 4, 1, 2, 5]
-lista_sin_duplicados = list(set(lista))
-```
+from bs4 import BeautifulSoup
 
-**Opción 2: Usando un bucle y el método `index()`**
+html = """
+<span class="RankingStatus_rankingvalueNum__d_m_a index-mobile_rankingvalueNum__U8Jaj">65</span>
 
-Puedes iterar sobre la lista y para cada elemento, usar el método `index()` para encontrar su primer índice de aparición. Si el índice del elemento es diferente del índice actual, significa que es un duplicado y se puede eliminar:
+<span class="CardPc_titleText__RYOWo"># <!-- -->holamayo</span>
+<span class="CardPc_itemValue__XGDmG">51K</span>
+<span class="CardPc_itemLabel__FRKbE">Posts</span>
+<span class="CardPc_itemValue__XGDmG">34M</span>
+<span class="CardPc_itemLabel__FRKbE">Views</span>
+"""
 
-```python
-lista = [1, 2, 3, 4, 1, 2, 5]
+soup = BeautifulSoup(html, 'html.parser')
 
-i = 0
-while i < len(lista):
-    if lista[i] in lista[i+1:]:
-        lista.pop(i)
-    else:
-        i += 1
-```
+# Obtener los últimos 5 elementos span
+spans = soup.find_all('span')[-5:]
 
-**Opción 3: Usando un diccionario**
+# Extraer los valores de texto de los spans
+values = [span.text for span in spans]
 
-Puedes crear un diccionario donde las claves sean los elementos de la lista. Como los diccionarios no permiten claves duplicadas, esto eliminará automáticamente los duplicados:
-
-```python
-lista = [1, 2, 3, 4, 1, 2, 5]
-
-elementos_unicos = {}
-for elemento in lista:
-    elementos_unicos[elemento] = True
-
-lista_sin_duplicados = list(elementos_unicos.keys())
+# Imprimir los valores
+print(values)
 ```

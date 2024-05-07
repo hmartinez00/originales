@@ -1,13 +1,20 @@
-import requests
+import tkinter as tk
+from tkinter import filedialog
 import pandas as pd
 from bs4 import BeautifulSoup
 from sync_voice_over.json_queries import export
 
-url = 'https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en'
 id = "CardPc_titleText__RYOWo"
 
-response = requests.get(url)
-html_content = response.content
+# Seleccionamos el directorio
+root = tk.Tk()
+root.withdraw()
+file = filedialog.askopenfilename()
+
+# Inspeccionamos el archivo
+with open(file, 'r', encoding='utf-8') as f:
+    html_content = f.read()
+
 soup = BeautifulSoup(html_content, 'html.parser')
 tags = soup.find_all('span')
 
@@ -21,14 +28,14 @@ for tag in range(len(tags)):
         i = 1
         while len(ticket) < 2:
             if 'Posts' in str(tags[tag + i].text):
-                value = str(tags[tag + i - 1].text)
-                posts.append(value + '\n')
+                value = int(str(tags[tag + i - 1].text).replace('K', ''))*1000
+                posts.append(value)
                 ticket.append(True)
                 print(len(ticket), value)
                 i += 1
             elif 'Views' in str(tags[tag + i].text):
-                value = str(tags[tag + i - 1].text)
-                views.append(value + '\n')
+                value = int(str(tags[tag + i - 1].text).replace('M', ''))*1000000
+                views.append(value)
                 ticket.append(True)
                 print(len(ticket), value)
                 i += 1

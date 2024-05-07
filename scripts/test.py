@@ -1,13 +1,23 @@
-import requests
+import tkinter as tk
+from tkinter import filedialog
 import pandas as pd
 from bs4 import BeautifulSoup
 from sync_voice_over.json_queries import export
 
-url = 'https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en'
 id = "CardPc_titleText__RYOWo"
 
-response = requests.get(url)
-html_content = response.content
+# url = 'https://ads.tiktok.com/business/creativecenter/inspiration/popular/hashtag/pc/en'
+# response = requests.get(url)
+
+# Seleccionamos el directorio
+root = tk.Tk()
+root.withdraw()
+file = filedialog.askopenfilename()
+
+# Inspeccionamos el archivo
+with open(file, 'r', encoding='utf-8') as f:
+    html_content = f.read()
+
 soup = BeautifulSoup(html_content, 'html.parser')
 tags = soup.find_all('span')
 
@@ -48,4 +58,3 @@ with open(output_file, 'w', encoding='utf-8') as f:
 df = pd.DataFrame.from_dict(info)
 print(df)
 export(df, output_xlsx)
-

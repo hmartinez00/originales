@@ -48,17 +48,19 @@ with open(file, 'r', encoding='utf-8') as f:
 
 soup = BeautifulSoup(html_tags, "lxml")
 
-titles      = ['app', 'a', 'title', 'title=', None]
-views       = ['app', 'strong', 'text', 'data-e2e=\"video-views\"', None]
-hrefs       = ['app', 'a', 'href', 'title=', None]
-hashtags    = ['app', 'a', None, 'title=', r'href="(.*?)"']
-s_hashtags  = ['ext', 'a', None, 'title=', r'href="(.*?)"']
+dict_1 = {
+    'titles'      :['app', 'a', 'title', 'title=', None],
+    'views'       :['app', 'strong', 'text', 'data-e2e="video-views"', None],
+    'hrefs'       :['app', 'a', 'href', 'title=', None],
+    'hashtags'    :['app', 'a', None, 'title=', r'href="(.*?)"'],
+    's_hashtags'  :['ext', 'a', None, 'title=', r'href="(.*?)"'],
+}
 
-titles      = only_value(soup, titles)
-views       = only_value(soup, views)
-hrefs       = only_value(soup, hrefs)
-hashtags    = only_value(soup, hashtags)
-s_hashtags  = only_value(soup, s_hashtags)
+titles      = only_value(soup, dict_1['titles'])
+views       = only_value(soup, dict_1['views'])
+hrefs       = only_value(soup, dict_1['hrefs'])
+hashtags    = only_value(soup, dict_1['hashtags'])
+s_hashtags  = only_value(soup, dict_1['s_hashtags'])
 
 info = {}
 info['titles']      = titles

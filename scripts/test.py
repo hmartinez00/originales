@@ -19,7 +19,7 @@ def only_value(soup, input_list):
     list_values  = []
     for value in soup.find_all(tag):
         if (line_label in str(value)):
-            if pattern == None:
+            if pattern == '':
                 if attr != 'text':
                     item = str(value[attr]) + '\n'
                 else:
@@ -49,19 +49,11 @@ with open(file, 'r', encoding='utf-8') as f:
 soup = BeautifulSoup(html_tags, "lxml")
 
 dict_1 = {
-    'titles'      :['app', 'a', 'title', 'title=', None],
-    'views'       :['app', 'strong', 'text', 'data-e2e=\"video-views\"', None],
-    'hrefs'       :['app', 'a', 'href', 'title=', None],
-    'hashtags'    :['app', 'a', None, 'title=', r'href="(.*?)"'],
-    's_hashtags'  :['ext', 'a', None, 'title=', r'href="(.*?)"'],
-}
-
-dict_2 = {
-    'titles'      :['app', 'a', 'title', 'title=', None],
-    'views'       :['app', 'strong', 'text', 'data-e2e=\"video-views\"', None],
-    'hrefs'       :['app', 'a', 'href', 'title=', None],
-    'hashtags'    :['app', 'a', None, 'title=', r'href="(.*?)"'],
-    's_hashtags'  :['ext', 'a', None, 'title=', r'href="(.*?)"'],
+    'titles'      :['app', 'span', 'text', 'css-j2a19r-SpanText efbd9f0', ''],
+    'views'       :['app', 'strong', 'text', 'data-e2e="video-views"', ''],
+    'hrefs'       :['app', 'a', 'href', 'title=', ''],
+    'hashtags'    :['app', 'a', '', 'title=', r'href="(.*?)"'],
+    's_hashtags'  :['ext', 'a', '', 'title=', r'href="(.*?)"'],
 }
 
 titles      = only_value(soup, dict_1['titles'])

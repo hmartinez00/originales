@@ -7,9 +7,14 @@
         "              @",
         "<yt-pdg-comment-chip-renderer"
     ],
-    "tiktok": [
-        "title=",
-        "data-e2e=\"video-views\"",
-        "fill-rule=\"evenodd\""
-    ]
+    "tiktok": {
+        "title=": [
+            ["a", "title"],
+            ["a", "href"],
+            ["a", ""]
+        ],
+        "data-e2e=\"video-views\"": [
+            ["strong", "text"]
+        ]
+    }
 }

@@ -1,1 +1,8 @@
-Dame un script que me permita abrir una pagina que ocupe toda la pantalla, desplegar un menu desplegable usando su xpath, elegir una opcion usando su xpath, y extraer los datos de una tabla dentro de la pagina. Incluye tiempos de espera para que la pagina pueda cargar y se puedan ejecutar las acciones.
+Como desconcateno esta cadena html
+
+```html
+html = "<html><body><h1>Un ejemplo de HTML en una <span>sola línea</span></h1></body></html>"
+```
+
+Necesito restituir los saltos de linea.
+

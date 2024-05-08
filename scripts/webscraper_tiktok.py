@@ -1,5 +1,4 @@
 import os
-import re
 import json
 import pandas as pd
 import tkinter as tk
@@ -8,9 +7,35 @@ from bs4 import BeautifulSoup
 from sync_voice_over.json_queries import dir_access, json_query, date_str, export
 
 
-# date = date_str()
-json_file = dir_access('urls')
-labels = json_query(json_file)['tiktok']
+def only_value(soup, input_list):
+    import re
+
+    option = input_list[0]
+    tag = input_list[1]
+    attr = input_list[2]
+    line_label = input_list[3]
+    pattern = input_list[4]
+
+    list_values  = []
+    for value in soup.find_all(tag):
+        if (line_label in str(value)):
+            if pattern == None:
+                if attr != 'text':
+                    item = str(value[attr]) + '\n'
+                else:
+                    item = value.text + '\n'
+            else:
+                item = re.findall(pattern, str(value))
+            
+            if option == 'app':
+                list_values.append(item)
+            elif option == 'ext':
+                list_values.extend(item)
+
+    return list_values
+
+# json_file = dir_access('urls')
+# labels = dict(json_query(json_file)['tiktok'])
 
 # Seleccionamos el directorio
 root = tk.Tk()
@@ -23,27 +48,17 @@ with open(file, 'r', encoding='utf-8') as f:
 
 soup = BeautifulSoup(html_tags, "lxml")
 
-a_values = []
-for value in soup.find_all('a'):
-    if (labels[0] in str(value)):
-        a_values.append(value)
+titles      = ['app', 'a', 'title', 'title=', None]
+views       = ['app', 'strong', 'text', 'data-e2e=\"video-views\"', None]
+hrefs       = ['app', 'a', 'href', 'title=', None]
+hashtags    = ['app', 'a', None, 'title=', r'href="(.*?)"']
+s_hashtags  = ['ext', 'a', None, 'title=', r'href="(.*?)"']
 
-strong_values = []
-for value in soup.find_all('strong'):
-    if (labels[1] in str(value)):
-        strong_values.append(value)
-
-titles  = [str(item['title']) + '\n' for item in a_values]
-views   = [item.text + '\n' for item in strong_values]
-hrefs, hashtags, superhashtags = [], [], []
-for item in a_values:
-    links = re.findall(r'href="(.*?)"', str(item))
-    hrefs.append(links[0])
-    if len(links) > 1:
-        hashtags.append(links[1:])
-        superhashtags.extend(links[1:])
-    else:
-        hashtags.append('No tags')
+titles      = only_value(soup, titles)
+views       = only_value(soup, views)
+hrefs       = only_value(soup, hrefs)
+hashtags    = only_value(soup, hashtags)
+s_hashtags  = only_value(soup, s_hashtags)
 
 info = {}
 info['titles']      = titles
@@ -63,11 +78,11 @@ output_json = os.path.join(os.path.dirname(file), f'{user}.json')
 output_xlsx = os.path.join(os.path.dirname(file), f'{user}.xlsx')
 
 with open(output_file, 'w', encoding='utf-8') as f:
-    for value in a_values:
+    for value in soup.find_all('a'):
         f.write(str(value) + '\n')
 
 with open(supra_file, 'w', encoding='utf-8') as f:
-    for item in list(set(superhashtags)):
+    for item in list(set(s_hashtags)):
         f.write(str(item) + '\n')
 
 output_content = json.dumps(info, indent=4)

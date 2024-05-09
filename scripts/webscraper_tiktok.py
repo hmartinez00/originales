@@ -57,10 +57,21 @@ dict_1 = {
 }
 
 titles      = only_value(soup, dict_1['titles'])
-views       = only_value(soup, dict_1['views'])
 hrefs       = only_value(soup, dict_1['hrefs'])
 hashtags    = only_value(soup, dict_1['hashtags'])
 s_hashtags  = only_value(soup, dict_1['s_hashtags'])
+
+views = []
+for item in only_value(soup, dict_1['views']):
+    if 'K' in str(item):
+        value = int(float(str(item).replace('K', '').replace('\n', '')) * 1000)
+        views.append(value)
+    elif 'M' in str(item):
+        value = int(float(str(item).replace('M', '').replace('\n', '')) * 1000000)
+        views.append(value)
+    else:
+        value = item
+        views.append(int(value))
 
 info = {}
 info['titles']      = titles

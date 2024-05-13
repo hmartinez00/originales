@@ -1,1 +1,1 @@
-Como me conecto a una hoja de google sheet para descargar la informacion y procesarla con pandas.
+Dame un script de javascript que cuando haga clik en un boton, arroje en la plantilla html, la hora actual incluyendo los segundos.

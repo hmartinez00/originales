@@ -1,4 +1,3 @@
-```javascript
 // Obtener el elemento del botón
 const button = document.querySelector('button');
 
@@ -15,7 +14,7 @@ button.addEventListener('click', () => {
   });
 
   // Obtener el elemento de la plantilla HTML
-  const template = document.querySelector('template');
+  const template = document.querySelector('h2');
 
   // Clonar la plantilla
   const clone = template.content.cloneNode(true);
@@ -26,14 +25,3 @@ button.addEventListener('click', () => {
   // Adjuntar la plantilla actualizada al documento
   document.body.appendChild(clone);
 });
-```
-
-**Plantilla HTML:**
-
-```html
-<template>
-  <div class="time-container">
-    <span class="time"></span>
-  </div>
-</template>
-```

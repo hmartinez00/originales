@@ -3,6 +3,9 @@
     "name": "Info Extract",
     "version": "1.0.0",
     "description": "Info tool and analyzer helper for youtube and tiktok.",
+    "background": {
+      "service_worker": "background.js"
+    },
     "action": {
         "default_popup": "popup.html"
     },
